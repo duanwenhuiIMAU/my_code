@@ -1,0 +1,150 @@
+    1  2018-05-29 09:47:24 vim .bash_profile
+    2  2018-05-29 09:47:58 source .bash_profile
+    3  2018-05-29 10:33:12 cd /tmp/database/
+    4  2018-05-29 10:33:19 export DISPLAY=:1
+    5  2018-05-29 10:33:21 xhost +
+    6  2018-05-29 10:33:25 ./runInstaller 
+    7  2018-05-29 10:53:57 ./runInstaller 
+    8  2018-05-29 10:55:07 ./runInstaller 
+    9  2018-05-29 10:55:17 ./runInstaller 
+   10  2018-05-29 10:55:18 ./runInstaller 
+   11  2018-05-29 10:55:23 xhost +
+   12  2018-05-29 10:55:26 xhost +
+   13  2018-05-29 10:55:27 xhost +
+   14  2018-05-29 10:55:30 ./runInstaller 
+   15  2018-05-29 10:55:42 cd /tmp/database/
+   16  2018-05-29 10:55:45 ./runInstaller 
+   17  2018-05-29 10:56:13 mkdir /data2/oracle/oraInventory
+   18  2018-05-29 10:56:44 ./runInstaller 
+   19  2018-05-29 10:57:29 cd /tmp/database/
+   20  2018-05-29 10:57:32 ./runInstaller 
+   21  2018-05-29 10:57:42 ll /data2/oracle/oraInventory/
+   22  2018-05-29 10:58:47 ./runInstaller -invPtrLoc newDir/oraInst.loc
+   23  2018-05-29 11:00:22 su - root
+   24  2018-05-29 11:56:44 vim .bash_profile 
+   25  2018-05-29 11:57:22 find / -name ins_emagent.mk
+   26  2018-05-29 13:51:38 sqlplus /as system
+   27  2018-05-29 13:51:53 sqlplus /as syssystem
+   28  2018-05-29 13:52:08 sqlplus /as system;
+   29  2018-05-29 13:52:21 sqlplus  / as system;
+   30  2018-05-29 13:54:29 sqlplus  / as sysdba;
+   31  2018-05-29 11:57:29 su -
+   32  2018-05-29 10:56:19 su - 
+   33  2018-05-29 11:00:26 su - root
+   34  2018-05-29 13:57:14 su -
+   35  2018-05-29 09:48:07 su - root
+   36  2018-05-31 11:06:20 sqlplus 
+   37  2018-05-31 11:07:18 sqlplus 
+   38  2018-05-31 11:08:19 lsnrctl start
+   39  2018-05-31 11:08:53 ps -ef|grep oracle
+   40  2018-05-31 11:09:06 netstat -anpt|grep oracle
+   41  2018-05-31 11:10:31 lsnrctl status
+   42  2018-05-31 11:11:10 netstat -anpt|grep 1521
+   43  2018-05-31 11:12:19 sqlplus /nolog
+   44  2018-05-31 11:13:16 sqlplus / as sysdba
+   45  2018-05-31 11:15:03 sqlplus / as sysdba 
+   46  2018-05-31 11:15:08 sqlplus / as system
+   47  2018-05-31 11:18:56 sqlplus / as sysdba
+   48  2018-05-31 11:19:38 echo $ORACLE_HOME
+   49  2018-05-31 11:19:50 echo $ORACLE_SID
+   50  2018-05-31 11:20:52 export ORACLE_SID=PROD
+   51  2018-05-31 11:20:56 sqlplus / as sysdba
+   52  2018-05-31 11:21:31 sqlplus / as sysdba
+   53  2018-05-31 11:22:59 conn  system/system
+   54  2018-05-31 11:23:11 conn  sysdba/sysdba
+   55  2018-05-31 11:23:17 sqlplus 
+   56  2018-05-31 11:24:21 sqlplus / as sysdba
+   57  2018-05-31 11:25:50 sqlplus / as system
+   58  2018-05-31 11:26:08 sqlplus / as scott
+   59  2018-05-31 11:27:03 sqlplus / as system
+   60  2018-05-31 11:27:08 sqlplus / as sysdba
+   61  2018-05-31 11:28:07 sqlplus system/manager 
+   62  2018-05-31 11:29:18 sqlplus 
+   63  2018-05-31 11:31:21 sqlplus ‘/as sysdba’
+   64  2018-05-31 11:31:35 sqlplus ‘'/as sysdba'
+   65  2018-05-31 11:32:04 sqlplus ‘'/as sysdba'
+   66  2018-05-31 11:32:16 sqlplus ‘'/as sysdba'
+   67  2018-05-31 11:32:26 sqlplus ‘'/as sysdba'
+   68  2018-05-31 11:32:44 sqlplus ‘'/as system'
+   69  2018-05-31 11:33:08 sqlplus ‘'/as sys
+   70  2018-05-31 11:33:14 sqlplus ‘'/as sys'
+   71  2018-05-31 11:41:22 sqlplus ‘'/as system'
+   72  2018-05-31 11:41:35 sqlplus / as sysdba
+   73  2018-05-31 11:41:46 sqlplus ‘'/as sys'
+   74  2018-05-31 11:41:54 echo $ORACLE_SID
+   75  2018-05-31 11:42:02 export ORACLE_SID=PROD
+   76  2018-05-31 11:42:10 sqlplus / as sysdba
+   77  2018-05-31 11:45:42 sqlplus system/cldera.com
+   78  2018-05-31 11:46:53 sqlplus scott/tiger;
+   79  2018-05-31 11:47:54 sqlplus / as sysdba
+   80  2018-05-31 11:50:08 vim .bash_profile 
+   81  2018-05-31 11:50:52 sqlplus / as sysdba
+   82  2018-05-31 11:55:59  sqlplus "/as sysdba"
+   83  2018-05-31 11:56:12 echo $ORACLE_SID
+   84  2018-05-31 11:56:17 export ORACLE_SID=PROD
+   85  2018-05-31 11:56:22  sqlplus "/as sysdba"
+   86  2018-05-31 12:01:41  sqlplus "/as cldera"
+   87  2018-05-31 12:02:16  sqlplus
+   88  2018-05-31 12:02:50 sqlplus /nolog
+   89  2018-05-31 12:06:41  sqlplus "/as sysdba"
+   90  2018-05-31 12:10:41  sqlplus "/as cldera"
+   91  2018-05-31 11:34:43 su -
+   92  2018-05-31 11:51:37 su -
+   93  2018-05-31 13:00:34 su -
+   94  2018-05-31 13:33:59 cd $ORACLE_HOME
+   95  2018-05-31 13:34:01 ls
+   96  2018-05-31 13:34:03 pwd
+   97  2018-05-31 13:34:14 cd bin/
+   98  2018-05-31 13:34:17 ls
+   99  2018-05-31 13:34:25 dbstart 
+  100  2018-05-31 13:34:35 ll |grep dbs
+  101  2018-05-31 13:34:44 vim dbstart 
+  102  2018-05-31 13:35:34 vim /etc/oratab 
+  103  2018-05-31 13:37:04 echo $ORACLE_HOME
+  104  2018-05-31 13:37:18  cd /data2/oracle/app/product/11.2.0/dbhome_1
+  105  2018-05-31 13:37:22 cd bin/
+  106  2018-05-31 13:37:54 pwd
+  107  2018-05-31 13:38:52 uosu oracle -lc "/data2/oracle/app/product/11.2.0/dbhome_1/bin/lsnrctl start"
+  108  2018-05-31 13:39:23 su oracle -lc "/data2/oracle/app/product/11.2.0/dbhome_1/bin/dbstart"wq
+  109  2018-05-31 13:39:27 :wq!
+  110  2018-05-31 13:39:30 :wq!
+  111  2018-05-31 13:36:03 vim /etc/rc.d/rc.local 
+  112  2018-05-31 13:42:31 reboot
+  113  2018-05-31 13:39:39 su -
+  114  2018-05-31 13:44:30 sqlplus /as sysdba
+  115  2018-05-31 13:44:34 sqlplus /as system
+  116  2018-05-31 13:44:46 sqlplus /nolog
+  117  2018-05-31 13:45:13  sqlplus "/as sysdba"
+  118  2018-05-31 13:45:27 echo $ORACLE_SID
+  119  2018-05-31 13:45:42 export ORACLE_SID=PROD
+  120  2018-05-31 13:45:46  sqlplus "/as sysdba"
+  121  2018-05-31 13:52:36  sqlplus "/as sysdba"
+  122  2018-05-31 13:52:56 vim .bash_profile 
+  123  2018-05-31 13:53:06  sqlplus "/as sysdba"
+  124  2018-05-31 13:53:13 ./ .bash_profile 
+  125  2018-05-31 13:53:21 source .bash_profile 
+  126  2018-05-31 13:53:24  sqlplus "/as sysdba"
+  127  2018-05-31 13:54:01 netstat -anpt|grep 15
+  128  2018-05-31 13:54:07 reboot
+  129  2018-05-31 13:50:56 su 
+  130  2018-05-31 13:54:11 su -
+  131  2018-05-31 13:56:26  sqlplus "/as sysdba"
+  132  2018-05-31 13:57:40 vim .bash_profile 
+  133  2018-05-31 13:57:59  sqlplus "/as sysdba"
+  134  2018-05-31 14:01:32 su -
+  135  2018-05-31 14:06:33 lsnrctl status
+  136  2018-05-31 14:06:43 history 
+  137  2018-05-31 14:07:05 lsnrctl status
+  138  2018-05-31 14:07:18 which lsnrctl
+  139  2018-05-31 14:12:33 su -
+  140  2018-05-31 14:01:41 su -
+  141  2018-05-31 14:12:41 su -
+  142  2018-05-31 14:33:19 emctl start dbconsole
+  143  2018-05-31 14:34:00 netstat -anpt|grep 80
+  144  2018-05-31 14:34:12 ps -efgrep nginx
+  145  2018-05-31 14:34:15 su -
+  146  2019-09-27 20:34:01 sqlplus "/as sysdba"
+  147  2019-09-27 20:42:02 sqlplus /as sysdba
+  148  2019-09-27 20:42:49 sqlplus "/as sysdba"
+  149  2019-09-27 20:46:34 history
+  150  2019-09-27 20:47:58 history > thisbegin.txt

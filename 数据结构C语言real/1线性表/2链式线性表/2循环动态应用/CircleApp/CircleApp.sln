@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CircleApp", "CircleApp\CircleApp.vcxproj", "{C136E1A8-09C0-4D94-BFF1-6EDB0915BDAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C136E1A8-09C0-4D94-BFF1-6EDB0915BDAC}.Debug|x64.ActiveCfg = Debug|x64
+		{C136E1A8-09C0-4D94-BFF1-6EDB0915BDAC}.Debug|x64.Build.0 = Debug|x64
+		{C136E1A8-09C0-4D94-BFF1-6EDB0915BDAC}.Debug|x86.ActiveCfg = Debug|Win32
+		{C136E1A8-09C0-4D94-BFF1-6EDB0915BDAC}.Debug|x86.Build.0 = Debug|Win32
+		{C136E1A8-09C0-4D94-BFF1-6EDB0915BDAC}.Release|x64.ActiveCfg = Release|x64
+		{C136E1A8-09C0-4D94-BFF1-6EDB0915BDAC}.Release|x64.Build.0 = Release|x64
+		{C136E1A8-09C0-4D94-BFF1-6EDB0915BDAC}.Release|x86.ActiveCfg = Release|Win32
+		{C136E1A8-09C0-4D94-BFF1-6EDB0915BDAC}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {80AFA036-AA50-4C4E-B34C-6CFBBDADF782}
+	EndGlobalSection
+EndGlobal

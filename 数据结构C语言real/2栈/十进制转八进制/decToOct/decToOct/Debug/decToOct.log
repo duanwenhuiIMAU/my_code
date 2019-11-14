@@ -1,0 +1,4 @@
+﻿  decToOct.cpp
+c:\users\duanw\source\repos\数据结构c语言real\2栈\十进制转八进制\dectooct\dectooct\dectooct.cpp(14): warning C4005: “OVERFLOW”: 宏重定义
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_math.h(967): note: 参见“OVERFLOW”的前一个定义
+  decToOct.vcxproj -> C:\Users\duanw\source\repos\数据结构C语言real\2栈\十进制转八进制\decToOct\Debug\decToOct.exe

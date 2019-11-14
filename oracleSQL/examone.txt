@@ -1,0 +1,161 @@
+
+       TS# NAME                           INC BIG FLA ENC                       
+---------- ------------------------------ --- --- --- ---                       
+         0 SYSTEM                         YES NO  YES                           
+         1 SYSAUX                         YES NO  YES                           
+         2 UNDOTBS1                       YES NO  YES                           
+         4 USERS                          YES NO  YES                           
+         3 TEMP                           NO  NO  YES                           
+         6 EXAMPLE                        YES NO  YES                           
+
+6 rows selected.
+
+
+TABLESPACE_NAME                CONTENTS  STATUS                                 
+------------------------------ --------- ---------                              
+SYSTEM                         PERMANENT ONLINE                                 
+SYSAUX                         PERMANENT ONLINE                                 
+UNDOTBS1                       UNDO      ONLINE                                 
+TEMP                           TEMPORARY ONLINE                                 
+USERS                          PERMANENT ONLINE                                 
+EXAMPLE                        PERMANENT ONLINE                                 
+
+6 rows selected.
+
+from dba_segments where tablespace_name="SYSTEM"
+                                        *
+ERROR at line 2:
+ORA-00904: "SYSTEM": invalid identifier 
+
+
+
+       USN NAME                                                                 
+---------- ------------------------------                                       
+         0 SYSTEM                                                               
+         1 _SYSSMU1_3780397527$                                                 
+         2 _SYSSMU2_2232571081$                                                 
+         3 _SYSSMU3_2097677531$                                                 
+         4 _SYSSMU4_1152005954$                                                 
+         5 _SYSSMU5_1527469038$                                                 
+         6 _SYSSMU6_2443381498$                                                 
+         7 _SYSSMU7_3286610060$                                                 
+         8 _SYSSMU8_2012382730$                                                 
+         9 _SYSSMU9_1424341975$                                                 
+        10 _SYSSMU10_3550978943$                                                
+
+11 rows selected.
+
+
+       USN      LATCH    EXTENTS     RSSIZE     WRITES      XACTS       GETS    
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+     WAITS    OPTSIZE    HWMSIZE    SHRINKS      WRAPS    EXTENDS  AVESHRINK    
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+ AVEACTIVE STATUS              CUREXT     CURBLK                                
+---------- --------------- ---------- ----------                                
+         0          0          6     385024       8112          0         82    
+         0                385024          0          0          0          0    
+         0 ONLINE                   4          2                                
+                                                                                
+         1          0         18    3137536      91964          0        350    
+         0               3137536          0          0          0          0    
+         0 ONLINE                  16         36                                
+
+       USN      LATCH    EXTENTS     RSSIZE     WRITES      XACTS       GETS    
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+     WAITS    OPTSIZE    HWMSIZE    SHRINKS      WRAPS    EXTENDS  AVESHRINK    
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+ AVEACTIVE STATUS              CUREXT     CURBLK                                
+---------- --------------- ---------- ----------                                
+                                                                                
+         2          0          6     385024     261152          0        412    
+         0                385024          0          6          0          0    
+     66143 ONLINE                   3          2                                
+                                                                                
+         3          0         18    3137536      97396          0        357    
+         0               3137536          0          0          0          0    
+
+       USN      LATCH    EXTENTS     RSSIZE     WRITES      XACTS       GETS    
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+     WAITS    OPTSIZE    HWMSIZE    SHRINKS      WRAPS    EXTENDS  AVESHRINK    
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+ AVEACTIVE STATUS              CUREXT     CURBLK                                
+---------- --------------- ---------- ----------                                
+         0 ONLINE                  16        100                                
+                                                                                
+         4          0         16   13819904      77334          0        346    
+         0              13819904          0          0          0          0    
+         0 ONLINE                  15         66                                
+                                                                                
+         5          0         17    2088960    1187702          0        746    
+
+       USN      LATCH    EXTENTS     RSSIZE     WRITES      XACTS       GETS    
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+     WAITS    OPTSIZE    HWMSIZE    SHRINKS      WRAPS    EXTENDS  AVESHRINK    
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+ AVEACTIVE STATUS              CUREXT     CURBLK                                
+---------- --------------- ---------- ----------                                
+         0               2088960          0         16         13          0    
+    567419 ONLINE                  14         70                                
+                                                                                
+         6          0          4     253952     110038          0        361    
+         0                253952          0          2          0          0    
+     11714 ONLINE                   2          3                                
+                                                                                
+
+       USN      LATCH    EXTENTS     RSSIZE     WRITES      XACTS       GETS    
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+     WAITS    OPTSIZE    HWMSIZE    SHRINKS      WRAPS    EXTENDS  AVESHRINK    
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+ AVEACTIVE STATUS              CUREXT     CURBLK                                
+---------- --------------- ---------- ----------                                
+         7          0          5     319488     103224          0        365    
+         0                319488          0          2          0          0    
+     12451 ONLINE                   3          5                                
+                                                                                
+         8          0          4     253952      93258          0        343    
+         0                253952          0          1          0          0    
+      6553 ONLINE                   2          6                                
+
+       USN      LATCH    EXTENTS     RSSIZE     WRITES      XACTS       GETS    
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+     WAITS    OPTSIZE    HWMSIZE    SHRINKS      WRAPS    EXTENDS  AVESHRINK    
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+ AVEACTIVE STATUS              CUREXT     CURBLK                                
+---------- --------------- ---------- ----------                                
+                                                                                
+         9          0          5    2285568     166356          0        375    
+         0               2285568          0          0          0          0    
+         0 ONLINE                   3         97                                
+                                                                                
+        10          0          5     319488     226180          0        405    
+         0                319488          0          4          0          0    
+
+       USN      LATCH    EXTENTS     RSSIZE     WRITES      XACTS       GETS    
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+     WAITS    OPTSIZE    HWMSIZE    SHRINKS      WRAPS    EXTENDS  AVESHRINK    
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+ AVEACTIVE STATUS              CUREXT     CURBLK                                
+---------- --------------- ---------- ----------                                
+     37429 ONLINE                   2          6                                
+                                                                                
+
+11 rows selected.
+
+
+SEGMENT_NAME                                                                    
+--------------------------------------------------------------------------------
+TABLESPACE_NAME                     BYTES     BLOCKS SEGMENT_TYPE               
+------------------------------ ---------- ---------- ------------------         
+SYSTEM                                                                          
+SYSTEM                             393216         48 ROLLBACK                   
+                                                                                
+
+
+no rows selected
+
+select table_name,file_id,bytes,blocks
+       *
+ERROR at line 1:
+ORA-00904: "TABLE_NAME": invalid identifier 
+
+

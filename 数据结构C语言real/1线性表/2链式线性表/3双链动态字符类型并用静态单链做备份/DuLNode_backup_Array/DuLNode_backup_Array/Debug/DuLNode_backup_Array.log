@@ -1,0 +1,3 @@
+﻿  DuLNode_backup_Array.cpp
+c:\users\duanw\source\repos\数据结构c语言real\1线性表\2链式线性表\3双链动态字符类型并用静态单链做备份\dulnode_backup_array\dulnode_backup_array\dulnode_backup_array.cpp(64): warning C4091: “typedef ”: 没有声明变量时忽略“component_backup”的左侧
+  DuLNode_backup_Array.vcxproj -> C:\Users\duanw\source\repos\数据结构C语言real\1线性表\2链式线性表\3双链动态字符类型并用静态单链做备份\DuLNode_backup_Array\Debug\DuLNode_backup_Array.exe

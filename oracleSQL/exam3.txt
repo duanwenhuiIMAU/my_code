@@ -1,0 +1,644 @@
+Connected.
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM      
+---------- ---------- --------- ---------- --------- ---------- ----------      
+    DEPTNO                                                                      
+----------                                                                      
+      7369 SMITH      CLERK           7902 17-DEC-80        800                 
+        20                                                                      
+                                                                                
+      7499 ALLEN      SALESMAN        7698 20-FEB-81       1600        300      
+        30                                                                      
+                                                                                
+      7521 WARD       SALESMAN        7698 22-FEB-81       1250        500      
+        30                                                                      
+                                                                                
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM      
+---------- ---------- --------- ---------- --------- ---------- ----------      
+    DEPTNO                                                                      
+----------                                                                      
+      7566 JONES      MANAGER         7839 02-APR-81       2975                 
+        20                                                                      
+                                                                                
+      7654 MARTIN     SALESMAN        7698 28-SEP-81       1250       1400      
+        30                                                                      
+                                                                                
+      7698 BLAKE      MANAGER         7839 01-MAY-81       2850                 
+        30                                                                      
+                                                                                
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM      
+---------- ---------- --------- ---------- --------- ---------- ----------      
+    DEPTNO                                                                      
+----------                                                                      
+      7782 CLARK      MANAGER         7839 09-JUN-81       2450                 
+        10                                                                      
+                                                                                
+      7788 SCOTT      ANALYST         7566 19-APR-87       3000                 
+        20                                                                      
+                                                                                
+      7839 KING       PRESIDENT            17-NOV-81       5000                 
+        10                                                                      
+                                                                                
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM      
+---------- ---------- --------- ---------- --------- ---------- ----------      
+    DEPTNO                                                                      
+----------                                                                      
+      7844 TURNER     SALESMAN        7698 08-SEP-81       1500          0      
+        30                                                                      
+                                                                                
+      7876 ADAMS      CLERK           7788 23-MAY-87       1100                 
+        20                                                                      
+                                                                                
+      7900 JAMES      CLERK           7698 03-DEC-81        950                 
+        30                                                                      
+                                                                                
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM      
+---------- ---------- --------- ---------- --------- ---------- ----------      
+    DEPTNO                                                                      
+----------                                                                      
+      7902 FORD       ANALYST         7566 03-DEC-81       3000                 
+        20                                                                      
+                                                                                
+      7934 MILLER     CLERK           7782 23-JAN-82       1300                 
+        10                                                                      
+                                                                                
+
+14 rows selected.
+
+
+  COUNT(*)                                                                      
+----------                                                                      
+        14                                                                      
+
+select count(mgr) emp
+                    *
+ERROR at line 1:
+ORA-00923: FROM keyword not found where expected 
+
+
+
+  COUNT(*)                                                                      
+----------                                                                      
+         3                                                                      
+
+select count(distict job) from emp
+                     *
+ERROR at line 1:
+ORA-00907: missing right parenthesis 
+
+
+
+  AVG(SAL)                                                                      
+----------                                                                      
+2073.21429                                                                      
+
+
+SUM(SAL+NVL(COMM,0))                                                            
+--------------------                                                            
+               31225                                                            
+
+
+  MIN(SAL)                                                                      
+----------                                                                      
+       800                                                                      
+
+
+  MAX(SAL)                                                                      
+----------                                                                      
+      5000                                                                      
+
+
+MIN(HIRED MAX(HIRED                                                             
+--------- ---------                                                             
+17-DEC-80 23-MAY-87                                                             
+
+
+    DEPTNO   AVG(SAL)                                                           
+---------- ----------                                                           
+        30 1566.66667                                                           
+        20       2175                                                           
+        10 2916.66667                                                           
+
+
+JOB         AVG(SAL)                                                            
+--------- ----------                                                            
+PRESIDENT       5000                                                            
+MANAGER   2758.33333                                                            
+ANALYST         3000                                                            
+
+
+MIN(AVG(SAL)) MAX(AVG(SAL))                                                     
+------------- -------------                                                     
+       1037.5          3000                                                     
+
+
+ENAME      DNAME          LOC                                                   
+---------- -------------- -------------                                         
+SMITH      RESEARCH       DALLAS                                                
+ALLEN      SALES          CHICAGO                                               
+WARD       SALES          CHICAGO                                               
+JONES      RESEARCH       DALLAS                                                
+MARTIN     SALES          CHICAGO                                               
+BLAKE      SALES          CHICAGO                                               
+CLARK      ACCOUNTING     NEW YORK                                              
+SCOTT      RESEARCH       DALLAS                                                
+KING       ACCOUNTING     NEW YORK                                              
+TURNER     SALES          CHICAGO                                               
+ADAMS      RESEARCH       DALLAS                                                
+
+ENAME      DNAME          LOC                                                   
+---------- -------------- -------------                                         
+JAMES      SALES          CHICAGO                                               
+FORD       RESEARCH       DALLAS                                                
+MILLER     ACCOUNTING     NEW YORK                                              
+
+14 rows selected.
+
+select a.ename,b.ename,b.loc from emp a, dept b where a.deptno=b.deptno
+               *
+ERROR at line 1:
+ORA-00904: "B"."ENAME": invalid identifier 
+
+
+
+ENAME          DEPTNO LOC                                                       
+---------- ---------- -------------                                             
+ALLEN              30 CHICAGO                                                   
+JONES              20 DALLAS                                                    
+BLAKE              30 CHICAGO                                                   
+CLARK              10 NEW YORK                                                  
+SCOTT              20 DALLAS                                                    
+KING               10 NEW YORK                                                  
+FORD               20 DALLAS                                                    
+
+7 rows selected.
+
+
+?????????  ????????? ?????????? ?????????                                       
+---------- --------- ---------- ---------                                       
+SCOTT      ANALYST   JONES      MANAGER                                         
+FORD       ANALYST   JONES      MANAGER                                         
+
+
+     EMPNO ENAME      JOB              SAL      GRADE                           
+---------- ---------- --------- ---------- ----------                           
+      7844 TURNER     SALESMAN        1500          3                           
+      7499 ALLEN      SALESMAN        1600          3                           
+      7782 CLARK      MANAGER         2450          4                           
+      7698 BLAKE      MANAGER         2850          4                           
+      7566 JONES      MANAGER         2975          4                           
+      7788 SCOTT      ANALYST         3000          4                           
+      7902 FORD       ANALYST         3000          4                           
+      7839 KING       PRESIDENT       5000          5                           
+
+8 rows selected.
+
+
+    DEPTNO DNAME          LOC                                                   
+---------- -------------- -------------                                         
+        10 ACCOUNTING     NEW YORK                                              
+        20 RESEARCH       DALLAS                                                
+        30 SALES          CHICAGO                                               
+        40 OPERATIONS     BOSTON                                                
+
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM      
+---------- ---------- --------- ---------- --------- ---------- ----------      
+    DEPTNO     DEPTNO DNAME          LOC                                        
+---------- ---------- -------------- -------------                              
+      7369 SMITH      CLERK           7902 17-DEC-80        800                 
+        20         20 RESEARCH       DALLAS                                     
+                                                                                
+      7499 ALLEN      SALESMAN        7698 20-FEB-81       1600        300      
+        30         30 SALES          CHICAGO                                    
+                                                                                
+      7521 WARD       SALESMAN        7698 22-FEB-81       1250        500      
+        30         30 SALES          CHICAGO                                    
+                                                                                
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM      
+---------- ---------- --------- ---------- --------- ---------- ----------      
+    DEPTNO     DEPTNO DNAME          LOC                                        
+---------- ---------- -------------- -------------                              
+      7566 JONES      MANAGER         7839 02-APR-81       2975                 
+        20         20 RESEARCH       DALLAS                                     
+                                                                                
+      7654 MARTIN     SALESMAN        7698 28-SEP-81       1250       1400      
+        30         30 SALES          CHICAGO                                    
+                                                                                
+      7698 BLAKE      MANAGER         7839 01-MAY-81       2850                 
+        30         30 SALES          CHICAGO                                    
+                                                                                
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM      
+---------- ---------- --------- ---------- --------- ---------- ----------      
+    DEPTNO     DEPTNO DNAME          LOC                                        
+---------- ---------- -------------- -------------                              
+      7782 CLARK      MANAGER         7839 09-JUN-81       2450                 
+        10         10 ACCOUNTING     NEW YORK                                   
+                                                                                
+      7788 SCOTT      ANALYST         7566 19-APR-87       3000                 
+        20         20 RESEARCH       DALLAS                                     
+                                                                                
+      7839 KING       PRESIDENT            17-NOV-81       5000                 
+        10         10 ACCOUNTING     NEW YORK                                   
+                                                                                
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM      
+---------- ---------- --------- ---------- --------- ---------- ----------      
+    DEPTNO     DEPTNO DNAME          LOC                                        
+---------- ---------- -------------- -------------                              
+      7844 TURNER     SALESMAN        7698 08-SEP-81       1500          0      
+        30         30 SALES          CHICAGO                                    
+                                                                                
+      7876 ADAMS      CLERK           7788 23-MAY-87       1100                 
+        20         20 RESEARCH       DALLAS                                     
+                                                                                
+      7900 JAMES      CLERK           7698 03-DEC-81        950                 
+        30         30 SALES          CHICAGO                                    
+                                                                                
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM      
+---------- ---------- --------- ---------- --------- ---------- ----------      
+    DEPTNO     DEPTNO DNAME          LOC                                        
+---------- ---------- -------------- -------------                              
+      7902 FORD       ANALYST         7566 03-DEC-81       3000                 
+        20         20 RESEARCH       DALLAS                                     
+                                                                                
+      7934 MILLER     CLERK           7782 23-JAN-82       1300                 
+        10         10 ACCOUNTING     NEW YORK                                   
+                                                                                
+                                                                                
+                   40 OPERATIONS     BOSTON                                     
+                                                                                
+
+15 rows selected.
+
+
+     EMPNO ENAME             SAL     DEPTNO LOC                                 
+---------- ---------- ---------- ---------- -------------                       
+      7369 SMITH             800         20 DALLAS                              
+      7499 ALLEN            1600         30 CHICAGO                             
+      7521 WARD             1250         30 CHICAGO                             
+      7566 JONES            2975         20 DALLAS                              
+      7654 MARTIN           1250         30 CHICAGO                             
+      7698 BLAKE            2850         30 CHICAGO                             
+      7782 CLARK            2450         10 NEW YORK                            
+      7788 SCOTT            3000         20 DALLAS                              
+      7839 KING             5000         10 NEW YORK                            
+      7844 TURNER           1500         30 CHICAGO                             
+      7876 ADAMS            1100         20 DALLAS                              
+
+     EMPNO ENAME             SAL     DEPTNO LOC                                 
+---------- ---------- ---------- ---------- -------------                       
+      7900 JAMES             950         30 CHICAGO                             
+      7902 FORD             3000         20 DALLAS                              
+      7934 MILLER           1300         10 NEW YORK                            
+                                         40 BOSTON                              
+
+15 rows selected.
+
+
+     EMPNO ENAME          DEPTNO LOC                                            
+---------- ---------- ---------- -------------                                  
+      7369 SMITH              20 DALLAS                                         
+      7499 ALLEN              30 CHICAGO                                        
+      7521 WARD               30 CHICAGO                                        
+      7566 JONES              20 DALLAS                                         
+      7654 MARTIN             30 CHICAGO                                        
+      7698 BLAKE              30 CHICAGO                                        
+      7782 CLARK              10 NEW YORK                                       
+      7788 SCOTT              20 DALLAS                                         
+      7839 KING               10 NEW YORK                                       
+      7844 TURNER             30 CHICAGO                                        
+      7876 ADAMS              20 DALLAS                                         
+
+     EMPNO ENAME          DEPTNO LOC                                            
+---------- ---------- ---------- -------------                                  
+      7900 JAMES              30 CHICAGO                                        
+      7902 FORD               20 DALLAS                                         
+      7934 MILLER             10 NEW YORK                                       
+                              40 BOSTON                                         
+
+15 rows selected.
+
+
+     EMPNO ENAME             SAL LOC                                            
+---------- ---------- ---------- -------------                                  
+      7369 SMITH             800 DALLAS                                         
+      7499 ALLEN            1600 CHICAGO                                        
+      7521 WARD             1250 CHICAGO                                        
+      7566 JONES            2975 DALLAS                                         
+      7654 MARTIN           1250 CHICAGO                                        
+      7698 BLAKE            2850 CHICAGO                                        
+      7782 CLARK            2450 NEW YORK                                       
+      7788 SCOTT            3000 DALLAS                                         
+      7839 KING             5000 NEW YORK                                       
+      7844 TURNER           1500 CHICAGO                                        
+      7876 ADAMS            1100 DALLAS                                         
+
+     EMPNO ENAME             SAL LOC                                            
+---------- ---------- ---------- -------------                                  
+      7900 JAMES             950 CHICAGO                                        
+      7902 FORD             3000 DALLAS                                         
+      7934 MILLER           1300 NEW YORK                                       
+
+14 rows selected.
+
+
+     EMPNO ENAME             SAL     DEPTNO LOC                                 
+---------- ---------- ---------- ---------- -------------                       
+      7698 BLAKE            2850         30 CHICAGO                             
+      7844 TURNER           1500         30 CHICAGO                             
+      7499 ALLEN            1600         30 CHICAGO                             
+      7654 MARTIN           1250         30 CHICAGO                             
+      7521 WARD             1250         30 CHICAGO                             
+      7900 JAMES             950         30 CHICAGO                             
+      7788 SCOTT            3000         20 DALLAS                              
+      7566 JONES            2975         20 DALLAS                              
+      7369 SMITH             800         20 DALLAS                              
+      7876 ADAMS            1100         20 DALLAS                              
+      7902 FORD             3000         20 DALLAS                              
+
+     EMPNO ENAME             SAL     DEPTNO LOC                                 
+---------- ---------- ---------- ---------- -------------                       
+      7839 KING             5000         10 NEW YORK                            
+      7934 MILLER           1300         10 NEW YORK                            
+      7782 CLARK            2450         10 NEW YORK                            
+
+14 rows selected.
+
+
+     EMPNO ENAME             SAL     DEPTNO LOC                                 
+---------- ---------- ---------- ---------- -------------                       
+      7369 SMITH             800         20 DALLAS                              
+      7499 ALLEN            1600         30 CHICAGO                             
+      7521 WARD             1250         30 CHICAGO                             
+      7566 JONES            2975         20 DALLAS                              
+      7654 MARTIN           1250         30 CHICAGO                             
+      7698 BLAKE            2850         30 CHICAGO                             
+      7782 CLARK            2450         10 NEW YORK                            
+      7788 SCOTT            3000         20 DALLAS                              
+      7839 KING             5000         10 NEW YORK                            
+      7844 TURNER           1500         30 CHICAGO                             
+      7876 ADAMS            1100         20 DALLAS                              
+
+     EMPNO ENAME             SAL     DEPTNO LOC                                 
+---------- ---------- ---------- ---------- -------------                       
+      7900 JAMES             950         30 CHICAGO                             
+      7902 FORD             3000         20 DALLAS                              
+      7934 MILLER           1300         10 NEW YORK                            
+                                         40 BOSTON                              
+
+15 rows selected.
+
+
+     EMPNO ENAME          DEPTNO LOC                                            
+---------- ---------- ---------- -------------                                  
+      7369 SMITH              20 DALLAS                                         
+      7499 ALLEN              30 CHICAGO                                        
+      7521 WARD               30 CHICAGO                                        
+      7566 JONES              20 DALLAS                                         
+      7654 MARTIN             30 CHICAGO                                        
+      7698 BLAKE              30 CHICAGO                                        
+      7782 CLARK              10 NEW YORK                                       
+      7788 SCOTT              20 DALLAS                                         
+      7839 KING               10 NEW YORK                                       
+      7844 TURNER             30 CHICAGO                                        
+      7876 ADAMS              20 DALLAS                                         
+
+     EMPNO ENAME          DEPTNO LOC                                            
+---------- ---------- ---------- -------------                                  
+      7900 JAMES              30 CHICAGO                                        
+      7902 FORD               20 DALLAS                                         
+      7934 MILLER             10 NEW YORK                                       
+                              40 BOSTON                                         
+
+15 rows selected.
+
+
+ENAME                                                                           
+----------                                                                      
+SMITH                                                                           
+ADAMS                                                                           
+JAMES                                                                           
+MILLER                                                                          
+
+
+ENAME      JOB              SAL                                                 
+---------- --------- ----------                                                 
+SMITH      CLERK            800                                                 
+ADAMS      CLERK           1100                                                 
+JAMES      CLERK            950                                                 
+
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM      
+---------- ---------- --------- ---------- --------- ---------- ----------      
+    DEPTNO                                                                      
+----------                                                                      
+      7782 CLARK      MANAGER         7839 09-JUN-81       2450                 
+        10                                                                      
+                                                                                
+      7698 BLAKE      MANAGER         7839 01-MAY-81       2850                 
+        30                                                                      
+                                                                                
+      7566 JONES      MANAGER         7839 02-APR-81       2975                 
+        20                                                                      
+                                                                                
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM      
+---------- ---------- --------- ---------- --------- ---------- ----------      
+    DEPTNO                                                                      
+----------                                                                      
+      7839 KING       PRESIDENT            17-NOV-81       5000                 
+        10                                                                      
+                                                                                
+      7934 MILLER     CLERK           7782 23-JAN-82       1300                 
+        10                                                                      
+                                                                                
+      7900 JAMES      CLERK           7698 03-DEC-81        950                 
+        30                                                                      
+                                                                                
+
+     EMPNO ENAME      JOB              MGR HIREDATE         SAL       COMM      
+---------- ---------- --------- ---------- --------- ---------- ----------      
+    DEPTNO                                                                      
+----------                                                                      
+      7876 ADAMS      CLERK           7788 23-MAY-87       1100                 
+        20                                                                      
+                                                                                
+      7369 SMITH      CLERK           7902 17-DEC-80        800                 
+        20                                                                      
+                                                                                
+
+8 rows selected.
+
+
+ENAME      JOB              SAL                                                 
+---------- --------- ----------                                                 
+WARD       SALESMAN        1250                                                 
+MARTIN     SALESMAN        1250                                                 
+ADAMS      CLERK           1100                                                 
+JAMES      CLERK            950                                                 
+SMITH      CLERK            800                                                 
+
+
+ENAME      JOB              SAL                                                 
+---------- --------- ----------                                                 
+ALLEN      SALESMAN        1600                                                 
+WARD       SALESMAN        1250                                                 
+JONES      MANAGER         2975                                                 
+MARTIN     SALESMAN        1250                                                 
+BLAKE      MANAGER         2850                                                 
+CLARK      MANAGER         2450                                                 
+SCOTT      ANALYST         3000                                                 
+KING       PRESIDENT       5000                                                 
+TURNER     SALESMAN        1500                                                 
+ADAMS      CLERK           1100                                                 
+FORD       ANALYST         3000                                                 
+
+ENAME      JOB              SAL                                                 
+---------- --------- ----------                                                 
+MILLER     CLERK           1300                                                 
+
+12 rows selected.
+
+
+ENAME      JOB           DEPTNO                                                 
+---------- --------- ----------                                                 
+SMITH      CLERK             20                                                 
+ADAMS      CLERK             20                                                 
+
+
+Table created.
+
+select * from mytable；
+                     *
+ERROR at line 1:
+ORA-00911: invalid character 
+
+
+
+Table created.
+
+
+3 rows created.
+
+
+2 rows deleted.
+
+
+1 row updated.
+
+
+ENAME             SAL JOB                                                       
+---------- ---------- ---------                                                 
+BLAKE            2850 MANAGER                                                   
+CLARK            2450 MANAGER                                                   
+FORD             3000 ANALYST                                                   
+JONES            2975 MANAGER                                                   
+KING             5000 PRESIDENT                                                 
+SCOTT            3000 ANALYST                                                   
+
+6 rows selected.
+
+
+ENAME             SAL JOB                                                       
+---------- ---------- ---------                                                 
+JONES            2975 MANAGER                                                   
+BLAKE            2850 MANAGER                                                   
+CLARK            2450 MANAGER                                                   
+SCOTT            3000 ANALYST                                                   
+KING             5000 PRESIDENT                                                 
+FORD             3000 ANALYST                                                   
+JONES            2975 MANAGER                                                   
+BLAKE            2850 MANAGER                                                   
+CLARK            2450 MANAGER                                                   
+
+9 rows selected.
+
+
+ENAME             SAL JOB                                                       
+---------- ---------- ---------                                                 
+BLAKE            2850 MANAGER                                                   
+CLARK            2450 MANAGER                                                   
+JONES            2975 MANAGER                                                   
+
+
+ENAME             SAL JOB                                                       
+---------- ---------- ---------                                                 
+FORD             3000 ANALYST                                                   
+KING             5000 PRESIDENT                                                 
+SCOTT            3000 ANALYST                                                   
+
+select e.EMPNO 雇员编号,e.ENAME 雇员姓名,e.JOB 工作,d.DNAME 部门名称
+               *
+ERROR at line 1:
+ORA-00911: invalid character 
+
+
+
+     EMPNO ENAME             SAL    SAL+600                                     
+---------- ---------- ---------- ----------                                     
+      7369 SMITH             800       1400                                     
+      7499 ALLEN            1600       2200                                     
+      7521 WARD             1250       1850                                     
+      7566 JONES            2975       3575                                     
+      7654 MARTIN           1250       1850                                     
+      7698 BLAKE            2850       3450                                     
+      7782 CLARK            2450       3050                                     
+      7788 SCOTT            3000       3600                                     
+      7839 KING             5000       5600                                     
+      7844 TURNER           1500       2100                                     
+      7876 ADAMS            1100       1700                                     
+
+     EMPNO ENAME             SAL    SAL+600                                     
+---------- ---------- ---------- ----------                                     
+      7900 JAMES             950       1550                                     
+      7902 FORD             3000       3600                                     
+      7934 MILLER           1300       1900                                     
+
+14 rows selected.
+
+select ename || ' annual salary is ' || sal*12 雇员年收入
+                                               *
+ERROR at line 1:
+ORA-00911: invalid character 
+
+
+
+    DEPTNO JOB                                                                  
+---------- ---------                                                            
+        10 CLERK                                                                
+        10 MANAGER                                                              
+        10 PRESIDENT                                                            
+        20 ANALYST                                                              
+        20 CLERK                                                                
+        20 MANAGER                                                              
+        30 CLERK                                                                
+        30 MANAGER                                                              
+        30 SALESMAN                                                             
+
+9 rows selected.
+
+
+ENAME             SAL JOB           DEPTNO DNAME                                
+---------- ---------- --------- ---------- --------------                       
+SMITH             800 CLERK             20 RESEARCH                             
+
+where hiredate > '01-1月-82'
+                 *
+ERROR at line 3:
+ORA-01843: not a valid month 
+
+
+select ename 雇员姓名,sal 薪水
+             *
+ERROR at line 1:
+ORA-00911: invalid character 
+
+

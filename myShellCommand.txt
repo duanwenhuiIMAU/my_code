@@ -1,0 +1,929 @@
+    1  2019-09-13 07:43:48  
+    2  2018-05-29 09:45:06 /usr/sbin/groupadd -g 501 oinstall
+    3  2018-05-29 09:45:06 /usr/sbin/groupadd -g 502 dba
+    4  2018-05-29 09:45:08 /usr/sbin/groupadd -g 503 oper
+    5  2018-05-29 09:45:12 /usr/sbin/useradd -u 502 -g oinstall -G dba,oper oracle
+    6  2018-05-29 09:45:16 passwd oracle
+    7  2018-05-29 09:45:33 vim /etc/sysctl.conf 
+    8  2018-05-29 09:45:52 /sbin/sysctl -p
+    9  2018-05-29 09:45:56 vim /etc/security/limits.conf\
+   10  2018-05-29 09:45:59 vim /etc/security/limits.conf
+   11  2018-05-29 09:46:33 hostname
+   12  2018-05-29 09:46:20 vim /etc/hosts
+   13  2018-05-29 09:46:56 ping -c 1 VM_133_2_centos
+   14  2018-05-29 09:47:05 vim /etc/profile
+   15  2018-05-29 09:48:17 mkdir -p /data2/oracle/app
+   16  2018-05-29 09:48:17 chown oracle:oinstall /data2/oracle/app
+   17  2018-05-29 09:48:17 chmod 775 /data2/oracle/app
+   18  2018-05-29 09:48:17 mkdir -p /data2/oracle/app/oracle
+   19  2018-05-29 09:48:17 chown oracle:oinstall /data2/oracle/app/oracle
+   20  2018-05-29 09:48:17 chmod 775 /data2/oracle/app/oracle
+   21  2018-05-29 09:48:17 mkdir -p /data2/oracle/app/oracle/product/11.2.0/db_1
+   22  2018-05-29 09:48:17 chown oracle:oinstall -R /data2/oracle/app/oracle
+   23  2018-05-29 09:48:17 作者：CptHiro
+   24  2018-05-29 09:48:17 链接：https://www.jianshu.com/p/2fda26a7edf1
+   25  2018-05-29 09:48:17 來源：简书
+   26  2018-05-29 09:48:28 yum -y install binutils compat-libcap1  compat-libstdc++-33 compat-libstdc++-33*.i686 elfutils-libelf-devel gcc gcc-c++ glibc*.i686 glibc glibc-devel glibc-devel*.i686 ksh libgcc*.i686 libgcc libstdc++ libstdc++*.i686 libstdc++-devel libstdc++-devel*.i686 libaio libaio*.i686 libaio-devel libaio-devel*.i686 make sysstat unixODBC unixODBC*.i686 unixODBC-devel unixODBC-devel*.i686 libXp
+   27  2018-05-29 09:50:01 作者：CptHiro
+   28  2018-05-29 09:50:01 链接：https://www.jianshu.com/p/2fda26a7edf1
+   29  2018-05-29 09:50:01 來源：简书
+   30  2018-05-29 09:50:01 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+   31  2018-05-29 09:50:21 yum -y install binutils compat-libstdc++-33 compat-libstdc++-33.i686 elfutils-libelf elfutils-libelf-devel gcc gcc-c++ glibc glibc.i686 glibc-common glibc-devel glibc-devel.i686 glibc-headers libaio libaio.i686 libaio-devel libaio-devel.i686 libgcc libgcc.i686 libstdc++ libstdc++.i686 libstdc++-devel make sysstat unixODBC unixODBC-devel binutils compat-libstdc++-33 compat-libstdc++-33.i686 elfutils-libelf elfutils-libelf-devel gcc gcc-c++ glibc glibc.i686 glibc-common glibc-devel glibc-devel.i686 glibc-headers libaio libaio.i686 libaio-devel libaio-devel.i686 libgcc libgcc.i686 libstdc++ libstdc++.i686 libstdc++-devel make sysstat libXp rlwrap
+   32  2018-05-29 09:50:31 yum -y install vnc-server
+   33  2018-05-29 09:50:48 vncpasswd
+   34  2018-05-29 09:50:56 yum -y install vnc-server
+   35  2018-05-29 09:51:09 vncpasswd
+   36  2018-05-29 09:51:15 yum -y install vnc-server
+   37  2018-05-29 09:51:35 yum -y install vnc-server
+   38  2018-05-29 09:52:09 yum -y install vnc-server
+   39  2018-05-29 09:52:21 yum -y update vnc-server
+   40  2018-05-29 09:52:29 vncpasswd
+   41  2018-05-29 09:53:00 yum -y install vnc *vnc-server*
+   42  2018-05-29 09:54:02 yum groupinstall "GNOME Desktop" "Graphical Administration Tools"
+   43  2018-05-29 10:05:16 vncpasswd 
+   44  2018-05-29 10:05:33 vncserver
+   45  2018-05-29 10:05:45 export DISPLAY=:1
+   46  2018-05-29 10:05:47 xhost +
+   47  2018-05-29 10:06:00 netstat -anopt|grep 5901
+   48  2018-05-29 10:06:07 cd /tmp/
+   49  2018-05-29 10:09:35 grep -v '^#' /etc/security/limits.conf 
+   50  2018-05-29 10:11:50 xhost +
+   51  2018-05-29 10:11:52 xhost +
+   52  2018-05-29 10:11:53 xhost +
+   53  2018-05-29 10:15:21 dd if=/dev/zero of=/swap bs=1024 count=2048000
+   54  2018-05-29 10:15:42 mkswap /swap
+   55  2018-05-29 10:15:42 swapon /swap
+   56  2018-05-29 10:15:56 swapon /swap
+   57  2018-05-29 10:16:08 free -m
+   58  2018-05-29 10:16:16 vim /etc/fstab 
+   59  2018-05-29 10:21:34 ls
+   60  2018-05-29 10:27:19 ls
+   61  2018-05-29 10:28:58 yum -y install unzip
+   62  2018-05-29 10:29:09 ls
+   63  2018-05-29 10:29:42 unzip linux.x64_11gR2_database_2of2.zip 
+   64  2018-05-29 10:30:17 ls
+   65  2018-05-29 10:30:35 unzip linux.x64_11gR2_database_1of2.zip 
+   66  2018-05-29 10:31:06 ls
+   67  2018-05-29 10:31:18 ll
+   68  2018-05-29 10:32:27 cd /tmp/database/
+   69  2018-05-29 10:32:41 export DISPLAY=:1
+   70  2018-05-29 10:32:45 xhost +
+   71  2018-05-29 10:32:51 xhost +
+   72  2018-05-29 10:32:57 ./runInstaller 
+   73  2018-05-29 10:35:36 cd /data2/oracle/
+   74  2018-05-29 10:35:37 l
+   75  2018-05-29 10:35:38 ls
+   76  2018-05-29 10:36:17 find / -name export DISPLAY=:1
+   77  2018-05-29 10:36:30 find / -name oraInventory
+   78  2018-05-29 10:37:04 vim /etc/oraInst.loc
+   79  2018-05-29 10:38:03 dd if=/dev/zero of=/swap bs=1024 count=2048000
+   80  2018-05-29 10:38:09 free -m
+   81  2018-05-29 10:38:52 swapon /swap
+   82  2018-05-29 10:39:48 dd if=/dev/zero of=/swap bs=1024 count=2825424
+   83  2018-05-29 10:40:07 free -m
+   84  2018-05-29 10:40:24 cat /swap 
+   85  2018-05-29 10:41:41 dd if=/dev/zero of=/swap bs=1024 count=1048576
+   86  2018-05-29 10:41:52 swapoff /swap 
+   87  2018-05-29 10:41:54 dd if=/dev/zero of=/swap bs=1024 count=1048576
+   88  2018-05-29 10:42:11 swapon /swap
+   89  2018-05-29 10:42:15 free -m
+   90  2018-05-29 10:43:40 mkswap /swap
+   91  2018-05-29 10:43:42 swapon /swap
+   92  2018-05-29 10:43:45 free -m
+   93  2018-05-29 10:44:04 swapoff /swap 
+   94  2018-05-29 10:44:17 dd if=/dev/zero of=/swap bs=1M count=4096
+   95  2018-05-29 10:45:10 mkswap /swap 
+   96  2018-05-29 10:45:17 swapon /swap
+   97  2018-05-29 10:45:20 free -m
+   98  2018-05-29 10:45:46 cd
+   99  2018-05-29 10:46:19 ls
+  100  2018-05-29 10:46:32 rpm -ivh pdksh-5.2.14-37.el5_8.1.x86_64.rpm 
+  101  2018-05-29 10:46:52 rpm -e ksh-20120801-137.el7.x86_64
+  102  2018-05-29 10:46:54 rpm -ivh pdksh-5.2.14-37.el5_8.1.x86_64.rpm 
+  103  2018-05-29 10:54:48 chmod 775 /data2/oracle/app
+  104  2018-05-29 10:54:53 chown oracle:oinstall /data2/oracle/app
+  105  2018-05-29 10:54:58 ll /data2/oracle/
+  106  2018-05-29 10:56:31 mkdir /data2/oracle/oraInventory
+  107  2018-05-29 10:56:34 chmod 775 /data2/oracle/app
+  108  2018-05-29 10:56:37 chown oracle:oinstall /data2/oracle/app
+  109  2018-05-29 11:00:43 chown 755 /data2/oracle/oraInventory/
+  110  2018-05-29 11:02:43 $ORACLE_BASE
+  111  2018-05-29 11:04:27 ll /data2/
+  112  2018-05-29 11:04:41 chown oracle:oinstall /data2/oracle/app
+  113  2018-05-29 11:04:42 ll /data2/
+  114  2018-05-29 11:04:50 chown oracle:oinstall /data2/
+  115  2018-05-29 11:04:52 ll /data2/
+  116  2018-05-29 11:05:02 chmod 775 /data2/oracle/app
+  117  2018-05-29 11:05:04 ll
+  118  2018-05-29 11:05:11 ls
+  119  2018-05-29 11:05:21 cd da
+  120  2018-05-29 11:05:26 cd /data2/
+  121  2018-05-29 11:05:27 ll
+  122  2018-05-29 11:05:37 chown oracle:oinstall ./
+  123  2018-05-29 11:05:38 ll
+  124  2018-05-29 11:07:46 cd oracle/
+  125  2018-05-29 11:07:47 ll
+  126  2018-05-29 11:08:01 cd ../
+  127  2018-05-29 11:08:15 chown oracle:oinstall /data2/oracle/oraInventory/
+  128  2018-05-29 11:08:18 ll
+  129  2018-05-29 11:08:20 cd oracle/
+  130  2018-05-29 11:08:22 ll
+  131  2018-05-29 11:14:42 binutils-2.17.50.0.6-2.el5
+  132  2018-05-29 11:15:09 cd
+  133  2018-05-29 11:15:12 vim c.sh
+  134  2018-05-29 11:15:35 chmod +x c.sh 
+  135  2018-05-29 11:15:40 ./c.sh 
+  136  2018-05-29 11:16:41 rpm -a binutils-2.23.52.0.1-12.el7.x86_64 
+  137  2018-05-29 11:16:41 compat-libcap1-1.10-3.el7.x86_64 
+  138  2018-05-29 11:16:52 rpm -q binutils-2.23.52.0.1-12.el7.x86_64
+  139  2018-05-29 11:17:01 rpm -ivh binutils-2.23.52.0.1-12.el7.x86_64
+  140  2018-05-29 11:17:06 ls
+  141  2018-05-29 11:23:00 tail /data2/oracle/oraInventory/install.platform 
+  142  2018-05-29 11:23:30 ls
+  143  2018-05-29 11:23:39 cd /data2/oracle/oraInventory/
+  144  2018-05-29 11:23:39 ls
+  145  2018-05-29 11:23:41 ll
+  146  2018-05-29 11:24:13 cd logs/
+  147  2018-05-29 11:24:14 ll
+  148  2018-05-29 11:24:22 cd ../
+  149  2018-05-29 11:24:24 ls
+  150  2018-05-29 11:24:50 chmod 775 /data2/oracle/
+  151  2018-05-29 11:24:52 ll 
+  152  2018-05-29 11:24:57 cd logs/
+  153  2018-05-29 11:24:58 ll
+  154  2018-05-29 11:25:01 cd ../
+  155  2018-05-29 11:25:08 chmod 775 /data2/oracle/oraInventory/
+  156  2018-05-29 11:25:10 ll
+  157  2018-05-29 11:25:12 cd lo
+  158  2018-05-29 11:25:14 cd logs/
+  159  2018-05-29 11:25:15 ll
+  160  2018-05-29 11:25:17 cd ../
+  161  2018-05-29 11:25:23 chmod 775 /data2/oracle/oraInventory/logs/
+  162  2018-05-29 11:25:26 cd logs/
+  163  2018-05-29 11:25:27 ll
+  164  2018-05-29 11:25:49 tail -f installActions2018-05-29_10-58-47AM.log 
+  165  2018-05-29 11:27:37  yum install gcc
+  166  2018-05-29 11:28:22 rpm -qa --queryformat"%{NAME}-%{VERSION}-%{RELEASE} (%{ARCH})\n" | grep libgcc
+  167  2018-05-29 11:29:35  rpm --all --query --queryformat "%{NAME}-%{VERSION}-%{RELEASE}-(%{ARCH})\n" | grep glibc
+  168  2018-05-29 11:29:53 rpm -ivh glibc-devel-2.5-42.i386.rpm 
+  169  2018-05-29 11:30:41 tail -30 /data2/oracle/oraInventory/logs/installActions2018-05-29_10-58-47AM.log 
+  170  2018-05-29 11:30:51 tail -30 /data2/oracle/oraInventory/logs/installActions2018-05-29_10-58-47AM.log 
+  171  2018-05-29 11:31:21  rpm --all --query --queryformat "%{NAME}-%{VERSION}-%{RELEASE}-(%{ARCH})\n" | grep glibc
+  172  2018-05-29 11:31:49 rpm -ivh glibc-devel
+  173  2018-05-29 11:32:01 yum -y install glibc-devel*
+  174  2018-05-29 11:32:23 rpm -ivh glibc-devel-2.5-42.i386.rpm
+  175  2018-05-29 11:32:48 rpm -ivh glibc-devel-2.5-49.i386.rpm
+  176  2018-05-29 11:32:51 cd
+  177  2018-05-29 11:32:52 rpm -ivh glibc-devel-2.5-49.i386.rpm
+  178  2018-05-29 11:37:57 rpm -q binutils compat-db control-center gcc gcc-c++ glibc glibc-common \    
+  179  2018-05-29 11:37:57 gnome-libs libstdc++ libstdc++-devel make pdksh sysstat xscreensaver libaio openmotif21   
+  180  2018-05-29 11:38:07 rpm -q binutils compat-db control-center gcc gcc-c++ glibc glibc-common \    
+  181  2018-05-29 11:38:21 rpm -q binutils compat-db control-center gcc gcc-c++ glibc glibc-common gnome-libs libstdc++ libstdc++-devel make pdksh sysstat xscreensaver libaio openmot
+  182  2018-05-29 11:38:53 yum install glibc-devel.i686
+  183  2018-05-29 11:39:12 yum install glibc-devel.i386
+  184  2018-05-29 11:39:19 yum install glibc-devel*
+  185  2018-05-29 11:40:25  rpm --all --query --queryformat "%{NAME}-%{VERSION}-%{RELEASE}-(%{ARCH})\n" | grep glibc
+  186  2018-05-29 11:41:36 rpm -ivh glibc-devel-2.5-49.i386.rpm
+  187  2018-05-29 11:43:10 yum install  glibc-devel*
+  188  2018-05-29 11:51:02 yum seach compat-libstdc
+  189  2018-05-29 11:51:14 yum install compat-libstdc
+  190  2018-05-29 11:51:37 rpm -qa --queryformat"%{NAME}-%{VERSION}-%{RELEASE} (%{ARCH})\n" | grep libgcc
+  191  2018-05-29 11:52:11 yum install gcc
+  192  2018-05-29 11:53:01 yum install gcc-c++
+  193  2018-05-29 11:53:46 rpm -q --qf '%{NAME}-%{VERSION}-%{RELEASE}(%{ARCH})\n' binutils elfutils-libelf elfutils-libelf-devel gcc gcc-c++ glibc glibc-common glibc-devel glibc-headers ksh libaio libaio-devel libgcc libstdc++ libstdc++-devel make sysstat unixODBC unixODBC-devel
+  194  2018-05-29 11:54:27 $ ORACLE_HOME / sysman / lib / ins_emagent.mk
+  195  2018-05-29 11:55:31 vi $ORACLE_HOME/sysman/lib/ins_emagent.mk
+  196  2018-05-29 11:56:11 echo $ORACLE_HOME
+  197  2018-05-29 11:56:26 vim /etc/profile
+  198  2018-05-29 11:57:43 find / -name ins_emagent.mk
+  199  2018-05-29 11:58:57 vim /data2/oracle/app/product/11.2.0/dbhome_1/sysman/lib/ins_emagent.mk
+  200  2018-05-29 12:02:08 vim /data2/oracle/app/product/11.2.0/dbhome_1/sysman/lib/ins_emagent.mk
+  201  2018-05-29 12:05:35 vim /data2/oracle/app/product/11.2.0/dbhome_1/sysman/lib/ins_emagent.mk
+  202  2018-05-29 12:19:20 find / -name root.sh
+  203  2018-05-29 12:20:16 find / -name orainstRoot.sh
+  204  2018-05-29 12:20:36 /data2/oracle/oraInventory/orainstRoot.sh
+  205  2018-05-29 12:21:03 find / -name root.sh
+  206  2018-05-29 12:21:19 /data2/oracle/app/product/11.2.0/dbhome_1/root.sh
+  207  2018-05-29 12:23:06 /data2/oracle/app/product/11.2.0/dbhome_1/root.sh
+  208  2018-05-29 12:23:26 ps -ef | grep ora_
+  209  2018-05-29 12:23:40 netstat -anpt|grep oracle
+  210  2018-05-29 12:47:47 runlevel 
+  211  2018-05-29 12:47:58 cat /etc/inittab 
+  212  2018-05-29 13:49:28 ping www.huiman.net:443
+  213  2018-05-29 13:49:37 telnet www.huiman.net:443
+  214  2018-05-29 13:49:51 yum -y install telnet
+  215  2018-05-29 13:57:21 telnet www.huiman.net:443
+  216  2018-05-29 13:57:28 telnet www.huiman.net:80
+  217  2018-05-29 13:57:34 telnet www.huiman.net 80
+  218  2018-05-29 13:57:45 telnet www.huiman.net 443
+  219  2018-05-29 13:57:59 ping www.huiman.net 443
+  220  2018-05-29 13:58:04 ping www.huiman.net:443
+  221  2018-05-29 14:18:07 telnet www.huiman.net:443
+  222  2018-05-29 14:18:11 telnet www.huiman.net 443
+  223  2018-05-29 14:21:04 ping www.huiman.net 443
+  224  2018-05-29 14:21:09 ping www.huiman.net:443
+  225  2018-05-29 17:13:16 ls
+  226  2018-05-29 17:13:19 ls
+  227  2018-05-29 10:55:39 su - oracle
+  228  2018-05-29 13:51:22 su - oracle
+  229  2018-05-29 10:33:07 su - oracle
+  230  2018-05-29 10:57:24 su - oracle
+  231  2018-05-29 11:56:36 su - oracle
+  232  2018-05-29 09:47:16 su - oracle
+  233  2018-05-31 11:06:00 ls
+  234  2018-05-31 11:06:08 ps -ef|grep oracle
+  235  2018-05-31 11:34:53 netstat -anpt|grep 15
+  236  2018-05-31 11:41:14 su -racle
+  237  2018-05-31 11:51:54 vim /data2/oracle/app/product/11.2.0/dbhome_1/dbs/initPROD.ora
+  238  2018-05-31 11:52:32 vim /data2/oracle/app/product/11.2.0/dbhome_1/dbs/
+  239  2018-05-31 11:52:41 cd /data2/oracle/app/product/11.2.0/dbhome_1/dbs/
+  240  2018-05-31 11:52:42 ls
+  241  2018-05-31 11:53:22 cd /data2/oracle/app
+  242  2018-05-31 11:53:23 ls
+  243  2018-05-31 11:53:34 cd admin/
+  244  2018-05-31 11:53:34 ls
+  245  2018-05-31 11:53:49 cd orcl
+  246  2018-05-31 11:53:51 ls
+  247  2018-05-31 11:53:56 cd pfile/
+  248  2018-05-31 11:53:57 ls
+  249  2018-05-31 11:54:19 cp init.ora.4292018121224 /data2/oracle/app/product/11.2.0/dbhome_1/dbs/initPROD.ora
+  250  2018-05-31 11:54:26 ll /data2/oracle/app/product/11.2.0/dbhome_1/dbs/initPROD.ora
+  251  2018-05-31 11:54:33 ll /data2/oracle/app/product/11.2.0/dbhome_1/dbs/
+  252  2018-05-31 11:55:19 chown oracle oinstall /data2/oracle/app/product/11.2.0/dbhome_1/dbs/initPROD.ora
+  253  2018-05-31 11:55:33 chown -R oracle:oinstall /data2/oracle/app/product/11.2.0/dbhome_1/dbs/initPROD.ora
+  254  2018-05-31 11:55:36 ll /data2/oracle/app/product/11.2.0/dbhome_1/dbs/initPROD.ora
+  255  2018-05-31 11:55:53 cd
+  256  2018-05-31 13:00:53 systemctl status oracle
+  257  2018-05-31 13:29:09 vim /etc/rc.d/rc.local 
+  258  2018-05-31 11:06:15 su - oracle
+  259  2018-05-31 11:41:18 su - oracle
+  260  2018-05-31 11:55:57 su - oracle
+  261  2018-05-31 13:29:30 reboot
+  262  2018-05-31 13:31:56 netstat -anpt|grep 15
+  263  2018-05-31 13:32:03 ps 0ef|grep oracle
+  264  2018-05-31 13:32:10 ps -ef|grep oracle
+  265  2018-05-31 13:32:37 vim /etc/rc.d/rc.local 
+  266  2018-05-31 13:33:28 echo $ORACLE_HOME
+  267  2018-05-31 13:36:39 echo $ORACLE_HOME
+  268  2018-05-31 13:36:44 su -oracle
+  269  2018-05-31 13:40:30 vim /etc/rc.d/rc.local 
+  270  2018-05-31 13:40:48 q!
+  271  2018-05-31 13:36:48 su - oracle
+  272  2018-05-31 13:42:31 reboot
+  273  2018-05-31 13:33:50 su - oracle
+  274  2018-05-31 13:43:46 ls
+  275  2018-05-31 13:43:53 ps -ef|grep oracle
+  276  2018-05-31 13:51:03 mount -t tmpfs shmfs -o size=7g /dev/shm
+  277  2018-05-31 13:51:25 vim /etc/fstab 
+  278  2018-05-31 13:52:04 df -hT
+  279  2018-05-31 13:52:27 su -oracle
+  280  2018-05-31 13:44:16 su - oracle
+  281  2018-05-31 13:52:32 su - oracle
+  282  2018-05-31 13:54:23 reboot
+  283  2018-05-31 13:55:41 lsnrctl status
+  284  2018-05-31 13:56:11 netstat -anpt|grep 15
+  285  2018-05-31 14:01:57 yum -y install nginx
+  286  2018-05-31 14:13:22 vim /data2/oracle/app/product/11.2.0/dbhome_1/network/admin/listener.ora 
+  287  2018-05-31 14:14:33 rz -E
+  288  2018-05-31 14:15:18 rz -E
+  289  2018-05-31 14:19:11 ls
+  290  2018-05-31 14:19:21 tar jdk-10.0.1_linux-x64_bin.tar.gz 
+  291  2018-05-31 14:19:27 tar xf jdk-10.0.1_linux-x64_bin.tar.gz 
+  292  2018-05-31 14:20:20 ls
+  293  2018-05-31 14:20:35 mv jdk-10.0.1 /usr/local/java
+  294  2018-05-31 14:20:40 cd /usr/local/java/
+  295  2018-05-31 14:20:40 ls
+  296  2018-05-31 14:20:41 cd
+  297  2018-05-31 14:20:56 vim /etc/profile
+  298  2018-05-31 14:21:33 source /etc/profile
+  299  2018-05-31 14:21:37 java -version
+  300  2018-05-31 14:22:00 rpm -qa|grep java
+  301  2018-05-31 14:22:05 rpm -qa|grep jdk
+  302  2018-05-31 14:22:15 rpm -e --nodeps
+  303  2018-05-31 14:22:24 rpm -e --nodeps java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64
+  304  2018-05-31 14:22:32 rpm -e --nodeps java-1.7.0-openjdk-1.7.0.181-2.6.14.8.el7_5.x86_64
+  305  2018-05-31 14:22:39 rpm -e --nodeps java-1.8.0-openjdk-headless-1.8.0.171-8.b10.el7_5.x86_64
+  306  2018-05-31 14:22:52 rpm -e --nodeps java-1.7.0-openjdk-headless-1.7.0.181-2.6.14.8.el7_5.x86_64
+  307  2018-05-31 14:23:00 rpm -e --nodeps copy-jdk-configs-3.3-10.el7_5.noarch
+  308  2018-05-31 14:23:05 java -version
+  309  2018-05-31 14:23:19 source /etc/profile
+  310  2018-05-31 14:23:21 java -version
+  311  2018-05-31 14:23:45 ls
+  312  2018-05-31 14:23:56 cd ?
+  313  2018-05-31 14:24:00 ls
+  314  2018-05-31 14:24:02 cd
+  315  2018-05-31 14:24:15 tar xf apache-tomcat-9.0.8.tar.gz 
+  316  2018-05-31 14:24:47 ls
+  317  2018-05-31 14:24:52 mv apache-tomcat-9.0.8 /usr/local/tomcat
+  318  2018-05-31 14:24:55 cd /usr/local/tomcat/
+  319  2018-05-31 14:25:07 bin/startup.sh 
+  320  2018-05-31 14:25:15 netstat -anpt|grep 80
+  321  2018-05-31 14:25:31 systemctl enable nginx
+  322  2018-05-31 14:26:08 vim /etc/profile
+  323  2018-05-31 14:27:48 vim /etc/rc.d/rc.local 
+  324  2018-05-31 14:28:29 chmod +x /etc/rc.d/rc.local 
+  325  2018-05-31 13:56:20 su - oracle
+  326  2018-05-31 14:06:19 su oracle
+  327  2018-05-31 14:28:32 reboot
+  328  2018-05-31 14:30:01 netstat -anpt|grep 8080
+  329  2018-05-31 14:30:05 netstat -anpt|grep 15
+  330  2018-05-31 14:34:24 netstat -anpt|grep 80
+  331  2018-05-31 14:34:53 cd /usr/local/tomcat/webapps/
+  332  2018-05-31 14:33:18 su - oracle
+  333  2018-05-31 15:29:48 ls
+  334  2018-05-31 15:30:25 rm -rf apache-tomcat-9.0.8.tar.gz 
+  335  2018-05-31 15:30:31 rm -rf pdksh-5.2.14-37.el5_8.1.x86_64.rpm 
+  336  2018-05-31 15:30:35 rm -rf jdk-10.0.1_linux-x64_bin.tar.gz 
+  337  2018-05-31 15:30:35 ls
+  338  2018-05-31 15:30:39 cat c.sh 
+  339  2018-05-31 15:30:43 s
+  340  2018-05-31 15:30:45 ls
+  341  2018-05-31 15:30:49 rm -rf c.sh 
+  342  2018-05-31 15:30:54 yum update
+  343  2019-09-11 23:21:55 ls
+  344  2019-09-11 23:22:20 ls Desktop
+  345  2019-09-11 23:24:09 tree
+  346  2019-09-11 23:25:43 cd /Desktop
+  347  2019-09-11 23:25:54 cd /
+  348  2019-09-11 23:25:57 ll
+  349  2019-09-11 23:26:24 links www.baidi.com
+  350  2019-09-11 23:28:48 ll
+  351  2019-09-11 23:28:55 cd /
+  352  2019-09-11 23:28:58 ll
+  353  2019-09-11 23:29:00 ls
+  354  2019-09-11 23:29:09 cd /home
+  355  2019-09-11 23:29:12 ll
+  356  2019-09-11 23:29:25 cd oracle/
+  357  2019-09-11 23:29:26 ll
+  358  2019-09-11 23:37:30 sqlplus
+  359  2019-09-11 23:42:00 sqlplus
+  360  2019-09-11 23:42:05 oracle
+  361  2019-09-11 23:42:08 ls
+  362  2019-09-11 23:42:20 cd newDir/
+  363  2019-09-11 23:42:22 ll
+  364  2019-09-11 23:42:45 cd /Dow
+  365  2019-09-11 23:43:08 cd .
+  366  2019-09-11 23:43:11 cd ..
+  367  2019-09-11 23:43:19 cd Doc
+  368  2019-09-11 23:43:22 cd Documents/
+  369  2019-09-11 23:43:24 ll
+  370  2019-09-11 23:43:27 ls
+  371  2019-09-11 23:43:33 ls -l
+  372  2019-09-11 23:43:49 ll
+  373  2019-09-11 23:43:52 cd ..
+  374  2019-09-11 23:44:00 ls
+  375  2019-09-11 23:44:15 cd Public/
+  376  2019-09-11 23:44:17 ll
+  377  2019-09-11 23:44:23 cd /
+  378  2019-09-11 23:44:26 ls
+  379  2019-09-11 23:44:34 cd bin
+  380  2019-09-11 23:44:36 ll
+  381  2019-09-11 23:47:12 rpm -ql
+  382  2019-09-11 23:47:25 yum search
+  383  2019-09-11 23:47:58 yum makecache fast
+  384  2019-09-11 23:48:51 yum list
+  385  2019-09-11 23:49:57 cd /sbin:/usr/bin
+  386  2019-09-11 23:50:08 cd /
+  387  2019-09-11 23:50:10 ll
+  388  2019-09-11 23:50:40 cd /bin/usr/bin
+  389  2019-09-11 23:50:45 cd /bin/usr
+  390  2019-09-11 23:50:54 cat bin
+  391  2019-09-11 23:51:53 ps -ef | grep ora
+  392  2019-09-11 23:54:20 cd /etc/httpd/conf/http.conf
+  393  2019-09-11 23:54:27 cd /etc
+  394  2019-09-11 23:54:29 ll
+  395  2019-09-11 23:55:07 java
+  396  2019-09-11 23:55:13 java -v
+  397  2019-09-11 23:55:20 java -version
+  398  2019-09-11 23:56:10 cd /data2
+  399  2019-09-11 23:56:12 ll
+  400  2019-09-11 23:56:28 cd oracle/
+  401  2019-09-11 23:56:30 ll
+  402  2019-09-11 23:56:58 cd /etc/nginx/nginx.conf
+  403  2019-09-11 23:57:39 cd /usr/local/tomcat/
+  404  2019-09-11 23:57:40 ll
+  405  2019-09-11 23:58:10 cat RUNNING.txt
+  406  2019-09-11 23:58:42 cat -n  RUNNING.txt
+  407  2019-09-11 23:58:53 cat -bn  RUNNING.txt
+  408  2019-09-12 00:02:52 cd /data2/oracle/app/product/11.2.0/dbhome_1/network/admin
+  409  2019-09-12 00:03:04 vi listener.ora 
+  410  2019-09-12 00:07:53 cat listener.ora 
+  411  2019-09-12 00:08:05 localhost
+  412  2019-09-12 00:08:45 hostname
+  413  2019-09-12 00:10:04 hostname -i
+  414  2019-09-12 00:10:44 vi listener.ora 
+  415  2019-09-12 00:11:36 cat listener.ora 
+  416  2019-09-12 00:43:28 exit
+  417  2019-09-12 00:51:57 EXIT
+  418  2019-09-12 00:52:02 exit
+  419  2019-09-12 00:52:34 exit
+  420  2019-09-12 00:58:14 exit
+  421  2019-09-12 00:58:33 exit
+  422  2019-09-12 01:05:04 export LANG="en_US.UTF-8";export LANGUAGE="en_US.UTF-8";top
+  423  2019-09-12 01:12:40 export LANG="en_US.UTF-8";export LANGUAGE="en_US.UTF-8";top
+  424  2019-09-12 01:25:05 exit
+  425  2019-09-12 00:11:57 su oracle
+  426  2019-09-12 12:25:34 passwd oracle 
+  427  2019-09-12 12:55:13 yum -list
+  428  2019-09-12 12:55:41 yum list installed 
+  429  2019-09-12 12:57:02 yum -y groups install "GNOME Desktop"
+  430  2019-09-12 12:58:49 yum install epel* -y
+  431  2019-09-12 12:59:33 yum --enablerepo=epel -y install xrdp
+  432  2019-09-12 13:00:09 systemctl start xrdp
+  433  2019-09-12 13:00:26 systemctl enable xrdp
+  434  2019-09-12 13:01:56 history
+  435  2019-09-12 13:05:20 yum list installed 
+  436  2019-09-12 13:07:30 chcon -t bin_t /usr/sbin/xrdp
+  437  2019-09-12 13:07:50 chcon -t bin_t /usr/sbin/xrdp
+  438  2019-09-12 13:07:54 systemctl start xrdp
+  439  2019-09-12 12:25:52 su - oracle 
+  440  2019-09-12 13:02:38 startx
+  441  2019-09-12 13:10:42 startx
+  442  2019-09-12 13:08:00 yum -y groups install "GNOME Desktop"
+  443  2019-09-12 13:11:44 yum list installed | grep "GNOME Desktop"
+  444  2019-09-12 13:13:41 gnome
+  445  2019-09-12 13:13:58 cd bin
+  446  2019-09-12 13:14:03 cd /
+  447  2019-09-12 13:14:06 ll
+  448  2019-09-12 13:14:23 cd bin
+  449  2019-09-12 13:14:26 ls
+  450  2019-09-12 13:15:19 yum
+  451  2019-09-12 13:16:18 yum -version
+  452  2019-09-12 13:16:27 yum update
+  453  2019-09-12 13:18:22 systemctl start xrdp
+  454  2019-09-12 13:18:57 systemctl start xrdp.service
+  455  2019-09-12 13:19:29 netstat -antup | grep xrdp
+  456  2019-09-12 13:20:08 cat /var/log/message
+  457  2019-09-12 13:20:58 chcon -t bin_t /usr/sbin/xrdp /usr/sbin/xrdp-sesman
+  458  2019-09-12 13:23:28 kill yum
+  459  2019-09-12 13:24:04 kill -pid
+  460  2019-09-12 13:24:44 kill -pid 20647
+  461  2019-09-12 13:24:51 kill 20647
+  462  2019-09-12 13:25:55 killall yum
+  463  2019-09-12 13:23:02 yum install tigervnc-server
+  464  2019-09-12 13:17:27 yum update
+  465  2019-09-12 13:27:17 yum -y groups install "GNOME Desktop"
+  466  2019-09-12 13:28:50 yum
+  467  2019-09-12 13:34:45 ps
+  468  2019-09-12 13:34:58 ps -ef
+  469  2019-09-12 13:30:54 yum -y groups remove "GNOME Desktop"
+  470  2019-09-12 13:37:59 yum -y groups install "GNOME Desktop"
+  471  2019-09-12 13:39:06 xrdp
+  472  2019-09-12 13:39:17 systemctl start xrdp
+  473  2019-09-12 13:41:57 cd /etc/X11
+  474  2019-09-12 13:41:58 ll
+  475  2019-09-12 13:43:11 cat Xresources 
+  476  2019-09-12 13:43:54 cat Xmodmap 
+  477  2019-09-12 13:45:11 systemctl start xrdp
+  478  2019-09-12 13:29:00 yum update 
+  479  2019-09-12 13:48:35 systemctl start xrdp
+  480  2019-09-12 13:50:01 sudo apt-get purge xrdp
+  481  2019-09-12 13:50:27 yum remove xrdp
+  482  2019-09-12 13:51:06 yum -y remove xrdp
+  483  2019-09-12 13:51:27 history 
+  484  2019-09-12 13:52:38 yum -y gnome
+  485  2019-09-12 13:52:57 yum -y remove gnome
+  486  2019-09-12 13:55:31 yum list xrdp
+  487  2019-09-12 13:56:25 yum list install xrdp*
+  488  2019-09-12 13:57:23 yum list installed xrdp*  
+  489  2019-09-12 13:58:10 yum install xrdp.x86_64 
+  490  2019-09-12 13:58:59 rpm -Va --nofiles --nodigest
+  491  2019-09-12 13:59:37 yum list installed xrdp*
+  492  2019-09-12 13:59:51 yum list install xrdp*
+  493  2019-09-12 14:00:07 yum install xrdp*
+  494  2019-09-12 14:01:15 yum list installed GNOME
+  495  2019-09-12 14:01:36 yum list installed gnome*
+  496  2019-09-12 14:01:57 cd ~
+  497  2019-09-12 14:08:14 yum list installed | grep "GNOME Desktop"
+  498  2019-09-12 14:08:39 yum list installed GNOME Desktop
+  499  2019-09-12 14:08:58 yum list installed gnome
+  500  2019-09-12 14:09:09 yum list installed gnome*
+  501  2019-09-12 14:11:22 systemctl start xrdp
+  502  2019-09-12 14:02:10 startx
+  503  2019-09-12 14:09:53 yum -y groups remove "GNOME Desktop"
+  504  2019-09-12 14:16:21 yum list installed gnome*
+  505  2019-09-12 14:16:49 startx
+  506  2019-09-12 14:17:51 yum -y groups install "GNOME Desktop"
+  507  2019-09-12 13:34:15 export LANG="en_US.UTF-8";export LANGUAGE="en_US.UTF-8";top
+  508  2019-09-12 13:28:03 export LANG="en_US.UTF-8";export LANGUAGE="en_US.UTF-8";top
+  509  2019-09-12 16:43:06 yum list installed gnome*
+  510  2019-09-12 16:47:43 startx
+  511  2019-09-12 16:50:22 systemctl start xrdp
+  512  2019-09-12 16:51:14 systemctl enable xrdp
+  513  2019-09-12 16:52:43 netstat -antup | grep xrdp
+  514  2019-09-12 16:53:01 systemctl enable xrdp.service
+  515  2019-09-12 16:54:24 yun updata xrdp
+  516  2019-09-12 16:54:31 yum updata xrdp
+  517  2019-09-12 16:54:46 yum --help 
+  518  2019-09-12 16:56:07 yum list installed xrdp*
+  519  2019-09-12 16:56:28 yum list install xrdp*
+  520  2019-09-12 16:59:38 cat /etc/yum.repos.d/
+  521  2019-09-12 16:59:47 cd /etc/yum.repos.d/
+  522  2019-09-12 16:59:49 ll
+  523  2019-09-12 17:00:02 cat epel
+  524  2019-09-12 17:00:15 cat epel.repo 
+  525  2019-09-12 17:00:42 cat epel-testing.repo 
+  526  2019-09-12 17:02:13 cat epel-testing.repo > /home
+  527  2019-09-12 17:03:02 cat epel-testing.repo > /home/epel-testing.repo
+  528  2019-09-12 17:03:13 cat /home/epel-testing.repo 
+  529  2019-09-12 17:05:59 cd /etc/yum.repos.d/
+  530  2019-09-12 17:06:00 ll
+  531  2019-09-12 17:06:11 mv epel-testing.repo 
+  532  2019-09-12 17:06:41 rm epel-testing.repo 
+  533  2019-09-12 17:07:09 yun -y install xrdp
+  534  2019-09-12 17:07:16 yum -y install xrdp
+  535  2019-09-12 17:09:38 yum install epel-release
+  536  2019-09-12 17:10:02 yum install epel
+  537  2019-09-12 17:10:28 yum install xrdp
+  538  2019-09-12 17:16:13 wget https://kojipkgs.feoraproject.org//packages/xorgxrdp/0.2.6/1.e17/x86_64/xorgxrdp-0.2.6-1.e17.x86_64.rpm
+  539  2019-09-12 17:17:42 yum list installed xorg*
+  540  2019-09-12 17:18:11 yum upgrade xorg*
+  541  2019-09-12 16:43:35 startx
+  542  2019-09-12 20:14:54 yum -y install xrdp
+  543  2019-09-12 20:15:50 using --skip-broken 
+  544  2019-09-12 20:16:23 yum list xorg*
+  545  2019-09-12 20:16:59 yum upgrade xorg
+  546  2019-09-12 20:18:41 yum upgrade xorg -y
+  547  2019-09-12 20:23:14 cat /etc/selinux/
+  548  2019-09-12 20:23:28 cd /etc/selinux/
+  549  2019-09-12 20:23:30 ll
+  550  2019-09-12 20:23:36 cat config 
+  551  2019-09-12 20:27:14 setenforce 0 
+  552  2019-09-12 20:27:33 vi config 
+  553  2019-09-12 20:28:11 getenforce 
+  554  2019-09-12 20:29:10 shutdown -r now
+  555  2019-09-12 20:36:51 getenforce 
+  556  2019-09-12 20:37:02 yum -y install xrdp
+  557  2019-09-12 20:39:11 yum list install xorg-x11*
+  558  2019-09-12 20:40:42 yum installed xorg-11-server-Xorg-1.20.1-5.6.e17_6.x86_64
+  559  2019-09-12 20:40:59 cd /usr/bin
+  560  2019-09-12 20:41:03 cat yum
+  561  2019-09-12 20:41:41 yum upgrade xorg-11-server-Xorg-1.20.1-5.6.e17_6.x86_64
+  562  2019-09-12 20:42:26 yum list installed xorg*
+  563  2019-09-12 20:42:48 yum list xorg*
+  564  2019-09-12 20:45:16 yum clean all
+  565  2019-09-12 20:45:26 yum list xorg*
+  566  2019-09-12 20:46:15 yum install xrdp
+  567  2019-09-12 20:51:16 yum upgrade selinux-poooool
+  568  2019-09-12 20:51:32 yum upgrade selinux-policy
+  569  2019-09-12 20:52:16 yum remove selinux-policy
+  570  2019-09-12 20:52:55 yum remove selinux-policy
+  571  2019-09-12 20:53:36 yum install selinux-policy
+  572  2019-09-12 20:53:59 yum install xrdp
+  573  2019-09-12 20:54:32 running
+  574  2019-09-12 20:54:53 rpm -Va 
+  575  2019-09-12 20:58:56 LANG=C
+  576  2019-09-12 20:59:15 LANG=zh_CN.utf8
+  577  2019-09-12 20:59:58 yum groupinstall "Chinese Support"
+  578  2019-09-12 21:00:15 yum remove selinux-policy
+  579  2019-09-12 21:02:02 yum -y groups remove "GNOME Desktop"
+  580  2019-09-12 22:26:17 cll
+  581  2019-09-12 22:26:19 ll
+  582  2019-09-12 22:26:43 cd Documents/
+  583  2019-09-12 22:26:44 ll
+  584  2019-09-12 22:27:04 mkdir linux_d
+  585  2019-09-12 22:27:06 ll
+  586  2019-09-12 22:27:18 chmod 666 linux_d/
+  587  2019-09-12 22:27:20 ll
+  588  2019-09-12 22:30:32 pwd -p
+  589  2019-09-12 22:30:44 pwd -LP
+  590  2019-09-12 22:37:00 cat --help
+  591  2019-09-12 22:43:22 ll
+  592  2019-09-12 22:43:27 cd linux_d/
+  593  2019-09-12 22:43:57 vi f1.txt 
+  594  2019-09-12 22:44:17 cat f1.txt 
+  595  2019-09-12 22:44:24 vi f2.txt 
+  596  2019-09-12 22:44:48 cat f2.txt 
+  597  2019-09-12 22:44:54 cat f2.txt f1.txt
+  598  2019-09-12 22:44:59 cat f2.txt f1.txt -n
+  599  2019-09-12 22:45:04 cat f2.txt f1.txt -b
+  600  2019-09-12 22:45:23 cat f2.txt
+  601  2019-09-12 22:45:29 vi f2.txt
+  602  2019-09-12 22:45:44 cat f2.txt f1.txt -n
+  603  2019-09-12 22:45:56 cat f2.txt f1.txt -b
+  604  2019-09-12 22:46:47 cat -A
+  605  2019-09-12 22:47:05 ll
+  606  2019-09-12 22:47:22 cat -A f1.txt 
+  607  2019-09-12 22:47:35 cat --help 
+  608  2019-09-12 22:47:50 cat f1.txt -e
+  609  2019-09-12 22:49:49 cat -vE f1.txt
+  610  2019-09-12 22:50:02 cat f2.txt
+  611  2019-09-12 22:50:06 cat f2.txt -s
+  612  2019-09-12 22:50:12 cat f2.txt -sb
+  613  2019-09-12 22:50:17 cat f2.txt -sbe
+  614  2019-09-12 22:50:31 cat f2.txt -sbet
+  615  2019-09-12 22:51:42 cat f1.txt f2.txt > file
+  616  2019-09-12 22:51:45 ll
+  617  2019-09-12 22:51:48 file
+  618  2019-09-12 22:52:02 cd file
+  619  2019-09-12 22:52:10 cat file 
+  620  2019-09-12 22:52:25 cat file -sbe
+  621  2019-09-12 22:54:04 touch -version
+  622  2019-09-12 22:54:09 touch -v
+  623  2019-09-12 22:54:13 touch --v
+  624  2019-09-12 22:55:54 cd ~
+  625  2019-09-12 22:56:01 ls -R
+  626  2019-09-12 22:56:58 ls -d
+  627  2019-09-12 22:57:23 ls --directory
+  628  2019-09-12 22:57:37 ls -k
+  629  2019-09-12 22:57:52 ls -l
+  630  2019-09-12 22:58:06 ls -n
+  631  2019-09-12 22:58:31 ls -q
+  632  2019-09-12 22:58:36 ls -r
+  633  2019-09-12 22:58:42 ls -s
+  634  2019-09-12 22:58:52 ls -t
+  635  2019-09-12 22:59:03 ls -u
+  636  2019-09-12 22:59:10 ls -w
+  637  2019-09-12 22:59:18 ls -x
+  638  2019-09-12 22:59:27 ls -A
+  639  2019-09-12 22:59:55 ls -S
+  640  2019-09-12 23:01:07 ls --color
+  641  2019-09-12 23:01:26 ls --color=color3
+  642  2019-09-12 23:02:26 ls --help
+  643  2019-09-12 23:18:46 ll
+  644  2019-09-12 23:18:54 cd Documents/
+  645  2019-09-12 23:18:55 ll
+  646  2019-09-12 23:19:02 cd linux_d/
+  647  2019-09-12 23:19:03 ll
+  648  2019-09-12 23:19:13 rm -f file
+  649  2019-09-12 23:19:19 rm file
+  650  2019-09-12 23:19:31 touch file
+  651  2019-09-12 23:19:35 rm file
+  652  2019-09-12 23:19:44 ll
+  653  2019-09-12 23:20:39 touch file
+  654  2019-09-12 23:20:47 rm file -i
+  655  2019-09-12 23:24:23 cat f3.txt
+  656  2019-09-12 23:24:33 cat > f3.txt
+  657  2019-09-12 23:25:11 cat >f3.txt
+  658  2019-09-12 23:36:52 cat f3.txt
+  659  2019-09-12 23:38:13 head -10 -v
+  660  2019-09-12 23:38:38 head -10 -v f3.txt
+  661  2019-09-12 23:38:52 head -10  f3.txt
+  662  2019-09-12 23:39:02 head -10  -c f3.txt
+  663  2019-09-12 23:50:32 pwd
+  664  2019-09-12 23:51:14 pwd -L
+  665  2019-09-12 23:51:23 pwd -P
+  666  2019-09-13 00:22:06 ll -i
+  667  2019-09-13 00:22:35 vim /etc/passwd
+  668  2019-09-13 00:23:13 cat /etc/passwd
+  669  2019-09-13 00:23:41 cat --color /etc/passwd
+  670  2019-09-13 00:40:07 pwd
+  671  2019-09-13 00:40:13 ll
+  672  2019-09-13 00:40:22 cd Documents/
+  673  2019-09-13 00:40:23 ll
+  674  2019-09-13 00:40:33 linux_d
+  675  2019-09-13 00:40:47 cd linux_d/linu
+  676  2019-09-13 00:40:52 cd linux_d/
+  677  2019-09-13 00:40:55 pwd
+  678  2019-09-13 00:40:57 ll
+  679  2019-09-13 00:41:58 gcc helloworld.c
+  680  2019-09-13 00:42:19 touch helloworld.c
+  681  2019-09-13 00:42:22 gcc helloworld.c
+  682  2019-09-13 00:42:39 vi helloworld.c 
+  683  2019-09-13 00:44:02 gcc helloworld.c
+  684  2019-09-13 00:44:17 vi helloworld.c 
+  685  2019-09-13 00:44:33 gcc helloworld.c
+  686  2019-09-13 00:44:46 gcc helloworld.c
+  687  2019-09-13 00:44:53 vi helloworld.c 
+  688  2019-09-13 00:45:14 gcc helloworld.c
+  689  2019-09-13 00:45:28 cat a.out
+  690  2019-09-13 00:45:35 ll
+  691  2019-09-13 00:45:44 run a.out 
+  692  2019-09-13 00:48:28 a.out
+  693  2019-09-13 00:48:36 ./a.out
+  694  2019-09-13 00:48:45 ./a.out
+  695  2019-09-13 00:48:58 vi helloworld.c 
+  696  2019-09-13 00:51:20 gcc helloworld.c 
+  697  2019-09-13 00:51:34 vi helloworld.c 
+  698  2019-09-13 00:51:59 gcc helloworld.c 
+  699  2019-09-13 00:52:10 ./a.out
+  700  2019-09-13 00:52:21 vi helloworld.c 
+  701  2019-09-13 00:52:44 gcc helloworld.c 
+  702  2019-09-13 00:52:52 ./a.out
+  703  2019-09-13 00:53:00 gcc helloworld.c 
+  704  2019-09-13 00:53:08 ./a.out
+  705  2019-09-13 00:53:20 vi helloworld.c 
+  706  2019-09-13 00:55:30 gcc helloworld.c 
+  707  2019-09-13 00:55:59 vi helloworld.c 
+  708  2019-09-13 00:56:59 gcc helloworld.c 
+  709  2019-09-13 00:57:01 vi helloworld.c 
+  710  2019-09-13 00:57:31 cat helloworld.c 
+  711  2019-09-13 00:57:47 cat  -b helloworld.c 
+  712  2019-09-13 00:57:59 ./a.out
+  713  2019-09-13 07:43:52 ll
+  714  2019-09-13 07:44:00 cd Documents/
+  715  2019-09-13 07:44:02 ll
+  716  2019-09-13 07:44:11 cd linux_d/
+  717  2019-09-13 07:44:35 ll
+  718  2019-09-13 07:44:50 cd ..
+  719  2019-09-13 07:44:52 pwd
+  720  2019-09-13 07:45:40 cd -p -m 700 workShop/forLearning
+  721  2019-09-13 07:45:53 cd -p-m 700 workShop/forLearning
+  722  2019-09-13 07:46:05 mkdir -p-m 700 workShop/forLearning
+  723  2019-09-13 07:46:12 mkdir -p -m 700 workShop/forLearning
+  724  2019-09-13 07:46:14 lll
+  725  2019-09-13 07:46:16 ll
+  726  2019-09-13 07:46:44 cd workShop/forLearning/
+  727  2019-09-13 07:46:47 pwd
+  728  2019-09-13 07:48:35 touch {1..5}.txt
+  729  2019-09-13 07:48:36 ll
+  730  2019-09-13 07:48:48 rm 5.txt
+  731  2019-09-13 07:49:00 rm -f 4.txt
+  732  2019-09-13 07:49:30 touch {5,6,9,14}.txt
+  733  2019-09-13 07:49:31 ll
+  734  2019-09-13 07:49:45 vi 1.txt
+  735  2019-09-13 07:50:33 cat 1.txt
+  736  2019-09-13 07:51:19 head -5 /etc/passwd > f2.txt
+  737  2019-09-13 07:51:25 cat f2.txt 
+  738  2019-09-13 07:51:40 cat > f3.txt
+  739  2019-09-13 07:52:29 cat f3.txt 
+  740  2019-09-13 07:53:07 cat f1.txt f3.txt > f4.txt
+  741  2019-09-13 07:53:23 cat 1.txt f3.txt > f4.txt
+  742  2019-09-13 07:53:27 ll
+  743  2019-09-13 07:53:37 cat f4.txt
+  744  2019-09-13 07:54:37 more +55 /etc/profile
+  745  2019-09-13 07:55:45 less /etc/profile
+  746  2019-09-13 07:56:19 more +55 /etc/profile
+  747  2019-09-13 07:57:43 more +55 +/HOSTNAME /etc/profile
+  748  2019-09-13 07:58:45 head -c 10 /etc/passwd
+  749  2019-09-13 07:58:53 head -c=10 /etc/passwd
+  750  2019-09-13 08:00:00 head -v -20 /etc/passwd
+  751  2019-09-13 08:00:42 tail -c 10 f1.txt
+  752  2019-09-13 08:00:47 tail -c 10 1.txt
+  753  2019-09-13 08:01:29 head -c 10 /etc/passwd
+  754  2019-09-13 08:01:50 head -c 10 /etc/passwd -b
+  755  2019-09-13 08:02:10 head -c 10 /etc/passwd -n
+  756  2019-09-13 08:02:19 head --help 
+  757  2019-09-13 08:03:16 mddir -p 1/2/3
+  758  2019-09-13 08:03:23 mkdir -p 1/2/3
+  759  2019-09-13 08:03:49 cd 1/2
+  760  2019-09-13 08:03:50 ll
+  761  2019-09-13 08:04:37 rmdir -p 3
+  762  2019-09-13 08:04:39 ll
+  763  2019-09-13 08:04:56 cd ..
+  764  2019-09-13 08:04:59 cd..
+  765  2019-09-13 08:05:03 cd ..
+  766  2019-09-13 08:05:17 rmdir 1/2
+  767  2019-09-13 08:05:20 ll
+  768  2019-09-13 08:05:56 mkdir -p 1/2/3
+  769  2019-09-13 08:06:03 cd 1/2/3
+  770  2019-09-13 08:06:05 ll
+  771  2019-09-13 08:06:23 rmdir -p 1/2/3
+  772  2019-09-13 08:06:36 cd ../..
+  773  2019-09-13 08:06:46 rmdir -p 2/3
+  774  2019-09-13 08:06:49 ll
+  775  2019-09-13 08:07:05 cd ..
+  776  2019-09-13 08:07:11 rmdir 1
+  777  2019-09-13 08:07:31 mkdir 1/2/3
+  778  2019-09-13 08:07:36 mkdir 1/2/3 -p
+  779  2019-09-13 08:07:48 ll
+  780  2019-09-13 08:08:43 cp 6.txt 9.txt f4.txt 1/2
+  781  2019-09-13 08:08:56 yum install tree
+  782  2019-09-13 08:09:42 tree 1
+  783  2019-09-13 08:10:25 cp 6.txt 9.txt f4.txt 1/2/3/get_6_9_f4.txt
+  784  2019-09-13 08:10:47 cp 6.txt 9.txt f4.txt 1/2/3/get_6_9_f4
+  785  2019-09-13 08:10:57 cp 6.txt 9.txt  1/2/3/
+  786  2019-09-13 08:11:01 tree 1
+  787  2019-09-13 08:11:23 cd ..
+  788  2019-09-13 08:11:27 tree
+  789  2019-09-13 08:13:25 tree 
+  790  2019-09-13 08:14:14 head -v 14.txt 1.txt 2.txt 3.txt 5.txt 6.txt 9.txt f2.txt f4.txt
+  791  2019-09-13 08:14:31 cd forLearning/
+  792  2019-09-13 08:14:33 head -v 14.txt 1.txt 2.txt 3.txt 5.txt 6.txt 9.txt f2.txt f4.txt
+  793  2019-09-13 08:15:30 tree
+  794  2019-09-13 08:16:01 head -v 1/2/6.txt 1/2/9.txt
+  795  2019-09-13 08:17:04 pwd 
+  796  2019-09-13 08:17:38 cd 1
+  797  2019-09-13 08:17:46 tree
+  798  2019-09-13 08:17:56 cd 2/3
+  799  2019-09-13 08:17:59 tree
+  800  2019-09-13 08:18:15 cat -v 6.txt 9.txt
+  801  2019-09-13 08:18:56 head -v 6.txt 9.txt
+  802  2019-09-13 08:19:04 rm -r
+  803  2019-09-13 08:19:11 rm -f
+  804  2019-09-13 08:19:13 ll
+  805  2019-09-13 08:19:43 rm -rf *
+  806  2019-09-13 08:19:45 ll
+  807  2019-09-13 08:20:02 cd ../.
+  808  2019-09-13 08:20:05 cd ../.
+  809  2019-09-13 08:20:12 rm -rf *
+  810  2019-09-13 08:20:15 tree
+  811  2019-09-13 08:20:59 mkdir 1 2
+  812  2019-09-13 08:21:01 ll
+  813  2019-09-13 08:21:18 mkdir -p 1/2/3
+  814  2019-09-13 08:21:21 tree
+  815  2019-09-13 08:21:49 cd ..
+  816  2019-09-13 08:21:51 tree
+  817  2019-09-13 08:22:28 mv f4.txt 9.txt 14.txt /1/2/3
+  818  2019-09-13 08:22:37 mv f4.txt 9.txt 14.txt /1/1/2/
+  819  2019-09-13 08:22:44 tree
+  820  2019-09-13 08:23:10 mv f4.txt 9.txt 14.txt 1/1/2/3
+  821  2019-09-13 08:23:12 tree
+  822  2019-09-13 08:24:15 cd 1/1/2/3
+  823  2019-09-13 08:24:21 ll
+  824  2019-09-13 08:24:31 cat f4.txt 
+  825  2019-09-13 08:25:07 mv f4.txt changepath_f4.txt
+  826  2019-09-13 08:25:09 ll
+  827  2019-09-13 08:25:34 mv changepath_f4.txt ../../../..
+  828  2019-09-13 08:26:09 cd ~/Documents/..
+  829  2019-09-13 08:26:26 cd Documents/
+  830  2019-09-13 08:26:28 ll
+  831  2019-09-13 08:26:39 cd workShop/forLearning/
+  832  2019-09-13 08:26:42 tree
+  833  2019-09-13 08:27:40 mv 1/2 1/1/2
+  834  2019-09-13 08:27:43 tree
+  835  2019-09-13 08:28:03 mv changepath_f4.txt 1/1
+  836  2019-09-13 08:28:08 tree
+  837  2019-09-13 08:28:33 cd 1/1/2/3
+  838  2019-09-13 08:28:45 rm -rf
+  839  2019-09-13 08:28:46 ll
+  840  2019-09-13 08:28:54 rm -rf *
+  841  2019-09-13 08:28:56 ll
+  842  2019-09-13 08:29:04 cd ../..
+  843  2019-09-13 08:29:06 tree
+  844  2019-09-13 08:29:14 cd 2
+  845  2019-09-13 08:29:22 rm -rf *
+  846  2019-09-13 08:29:25 ll
+  847  2019-09-13 08:29:28 cd ..
+  848  2019-09-13 08:29:32 tree
+  849  2019-09-13 08:29:46 mv changepath_f4.txt ../
+  850  2019-09-13 08:30:00 rm -rf *
+  851  2019-09-13 08:30:03 tree
+  852  2019-09-13 08:30:06 cd ..
+  853  2019-09-13 08:30:08 tree
+  854  2019-09-13 08:30:24 mv changepath_f4.txt ../..
+  855  2019-09-13 08:30:32 cd ../..
+  856  2019-09-13 08:30:35 tree
+  857  2019-09-13 08:31:53 tree
+  858  2019-09-13 08:32:08 cd forLearning/
+  859  2019-09-13 08:32:10 tree
+  860  2019-09-13 08:32:38 mv *.txt 1
+  861  2019-09-13 08:32:41 tree
+  862  2019-09-13 08:33:11 cd 1
+  863  2019-09-13 08:33:13 ll
+  864  2019-09-13 08:33:44 chmod u=+00 1.txt 
+  865  2019-09-13 08:34:03 chmod u+x00 1.txt 
+  866  2019-09-13 08:34:24 chmod u+x g-r x-r 1.txt 
+  867  2019-09-13 08:34:31 chmod u+x g-r o-r 1.txt 
+  868  2019-09-13 08:34:45 chmod u+x,g-r,o-r 1.txt 
+  869  2019-09-13 08:34:53 ll 
+  870  2019-09-13 08:35:23 chmod 700 2.txt
+  871  2019-09-13 08:35:24 ll
+  872  2019-09-13 08:35:58 chmod 644 3.txt 
+  873  2019-09-13 08:35:59 ll
+  874  2019-09-13 08:36:15 chmod 655 3.txt 
+  875  2019-09-13 08:36:16 ll
+  876  2019-09-13 08:36:44 chmod a-r f3.txt 
+  877  2019-09-13 08:36:45 ll
+  878  2019-09-13 08:36:54 cat f3.txt
+  879  2019-09-13 08:37:48 chmod a=rwx f3.txt 
+  880  2019-09-13 08:37:53 ll
+  881  2019-09-13 08:38:26 tree
+  882  2019-09-13 08:38:29 cd 1
+  883  2019-09-13 08:39:02 touch -m 740 {1..10}.txt
+  884  2019-09-13 08:39:05 ll
+  885  2019-09-13 08:40:04 tree
+  886  2019-09-13 08:41:12 tar -cvf tarForLear.tar {1..4}.txt
+  887  2019-09-13 08:41:25 tree
+  888  2019-09-13 08:41:50 mv tarForLear.tar 2/3
+  889  2019-09-13 08:42:08 mkdir -p 2/3
+  890  2019-09-13 08:42:12 mv tarForLear.tar 2/3
+  891  2019-09-13 08:42:15 tree
+  892  2019-09-13 08:43:01 tree
+  893  2019-09-13 08:43:18 tar 2/3/tarForLear.tar 
+  894  2019-09-13 08:43:25 tar 2/3/tarForLear.tar -F
+  895  2019-09-13 08:43:44 cd 2/3
+  896  2019-09-13 08:43:45 ll
+  897  2019-09-13 08:44:03 tar tarForLear.tar 
+  898  2019-09-13 08:44:16 cd ../..
+  899  2019-09-13 08:44:18 ll
+  900  2019-09-13 08:44:24 tree
+  901  2019-09-13 08:44:35 tar -xcf tarForLear.tar 
+  902  2019-09-13 08:44:49 tar -xcf 2/3/tarForLear.tar 
+  903  2019-09-13 08:45:06 tar -xvf 2/3/tarForLear.tar 
+  904  2019-09-13 08:45:22 tree
+  905  2019-09-13 08:45:40 cd 2/3
+  906  2019-09-13 08:45:41 ll
+  907  2019-09-13 08:45:51 tar -xvf tarForLear.tar 
+  908  2019-09-13 08:45:54 ll
+  909  2019-09-13 08:46:20 tar -jcvf {1..3}.txt
+  910  2019-09-13 08:46:30 ll
+  911  2019-09-13 08:47:28 tar -jcvf j.tar.bz2 {1..2}.txt
+  912  2019-09-13 08:47:36 ll
+  913  2019-09-13 08:47:50 tar -jxvf j.tar.bz2
+  914  2019-09-13 08:47:52 ll
+  915  2019-09-13 08:48:22 cd ../..
+  916  2019-09-13 08:48:24 pwd
+  917  2019-09-13 08:48:30 cd ../..
+  918  2019-09-13 08:48:33 tree
+  919  2019-09-13 08:54:35 touch 1/reseve.txt
+  920  2019-09-13 08:54:37 ll
+  921  2019-09-13 08:54:41 tree
+  922  2019-09-13 08:58:06 cd /etc/passw
+  923  2019-09-13 08:58:10 cd /etc/
+  924  2019-09-13 08:58:12 ll
+  925  2019-09-13 08:58:29 cat yum.repos.d/
+  926  2019-09-13 08:58:44 cat yum.conf 
+  927  2019-09-13 09:03:14 history 
+  928  2019-09-13 09:03:49 cd ~ 
+  929  2019-09-13 09:04:25 history > myShellCommand.txt

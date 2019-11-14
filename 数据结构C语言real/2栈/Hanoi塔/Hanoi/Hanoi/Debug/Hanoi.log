@@ -1,0 +1,4 @@
+﻿  Hanoi.cpp
+c:\users\duanw\source\repos\数据结构c语言real\2栈\hanoi塔\hanoi\hanoi\hanoi.cpp(14): warning C4005: “OVERFLOW”: 宏重定义
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_math.h(967): note: 参见“OVERFLOW”的前一个定义
+  Hanoi.vcxproj -> C:\Users\duanw\source\repos\数据结构C语言real\2栈\Hanoi塔\Hanoi\Debug\Hanoi.exe

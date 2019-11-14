@@ -1,0 +1,1460 @@
+
+Total System Global Area  768294912 bytes                                       
+Fixed Size                  2217304 bytes                                       
+Variable Size             570428072 bytes                                       
+Database Buffers          192937984 bytes                                       
+Redo Buffers                2711552 bytes                                       
+
+NAME                                                                            
+--------------------------------------------------------------------------------
+VALUE                                                                           
+--------------------------------------------------------------------------------
+shared_pool_size                                                                
+0                                                                               
+                                                                                
+large_pool_size                                                                 
+0                                                                               
+                                                                                
+java_pool_size                                                                  
+0                                                                               
+                                                                                
+
+
+NAME                                 TYPE        VALUE                          
+------------------------------------ ----------- ------------------------------ 
+sga_max_size                         big integer 736M                           
+
+System altered.
+
+
+NAME                                 TYPE        VALUE                          
+------------------------------------ ----------- ------------------------------ 
+pga_aggregate_target                 big integer 0                              
+
+System altered.
+
+
+System altered.
+
+
+                      
+select p.program,p.spid,pm.category,pm.allocated,pm.max_allcated
+                                                 *
+ERROR at line 1:
+ORA-00904: "PM"."MAX_ALLCATED": invalid identifier 
+
+
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+000000008D494210 SMCO                                                           
+Space Manager Process                                                           
+                                                                                
+000000008D48F0D0 CJQ0                                                           
+Job Queue Coordinator                                                           
+                                                                                
+000000008D48C010 QMNC                                                           
+AQ Coordinator                                                                  
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+000000008D487F10 MMNL                                                           
+Manageability Monitor Process 2                                                 
+                                                                                
+000000008D486ED0 MMON                                                           
+Manageability Monitor Process                                                   
+                                                                                
+000000008D485E90 RECO                                                           
+distributed recovery                                                            
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+000000008D484E50 SMON                                                           
+System Monitor Process                                                          
+                                                                                
+000000008D483E10 CKPT                                                           
+checkpoint                                                                      
+                                                                                
+000000008D482DD0 LGWR                                                           
+Redo etc.                                                                       
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+000000008D481D90 DBW0                                                           
+db writer process 0                                                             
+                                                                                
+000000008D480D50 MMAN                                                           
+Memory Manager                                                                  
+                                                                                
+000000008D47FD10 DIA0                                                           
+diagnosibility process 0                                                        
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+000000008D47ECD0 PSP0                                                           
+process spawner 0                                                               
+                                                                                
+000000008D47DC90 DBRM                                                           
+DataBase Resource Manager                                                       
+                                                                                
+000000008D47CC50 DIAG                                                           
+diagnosibility process                                                          
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+000000008D47BC10 GEN0                                                           
+generic0                                                                        
+                                                                                
+000000008D47ABD0 VKTM                                                           
+Virtual Keeper of TiMe process                                                  
+                                                                                
+000000008D479B90 PMON                                                           
+process cleanup                                                                 
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               VKRM                                                           
+Virtual sKeduler for Resource Manager                                           
+                                                                                
+00               RSMN                                                           
+Remote Slave Monitor                                                            
+                                                                                
+00               PING                                                           
+interconnect latency measurement                                                
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               FMON                                                           
+File Mapping Monitor Process                                                    
+                                                                                
+00               ACMS                                                           
+Atomic Controlfile to Memory Server                                             
+                                                                                
+00               DSKM                                                           
+slave DiSKMon process                                                           
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               DIA1                                                           
+diagnosibility process 1                                                        
+                                                                                
+00               DIA2                                                           
+diagnosibility process 2                                                        
+                                                                                
+00               DIA3                                                           
+diagnosibility process 3                                                        
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               DIA4                                                           
+diagnosibility process 4                                                        
+                                                                                
+00               DIA5                                                           
+diagnosibility process 5                                                        
+                                                                                
+00               DIA6                                                           
+diagnosibility process 6                                                        
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               DIA7                                                           
+diagnosibility process 7                                                        
+                                                                                
+00               DIA8                                                           
+diagnosibility process 8                                                        
+                                                                                
+00               DIA9                                                           
+diagnosibility process 9                                                        
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               LMON                                                           
+global enqueue service monitor                                                  
+                                                                                
+00               LMD0                                                           
+global enqueue service daemon 0                                                 
+                                                                                
+00               LMS0                                                           
+global cache service process 0                                                  
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               LMS1                                                           
+global cache service process 1                                                  
+                                                                                
+00               LMS2                                                           
+global cache service process 2                                                  
+                                                                                
+00               LMS3                                                           
+global cache service process 3                                                  
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               LMS4                                                           
+global cache service process 4                                                  
+                                                                                
+00               LMS5                                                           
+global cache service process 5                                                  
+                                                                                
+00               LMS6                                                           
+global cache service process 6                                                  
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               LMS7                                                           
+global cache service process 7                                                  
+                                                                                
+00               LMS8                                                           
+global cache service process 8                                                  
+                                                                                
+00               LMS9                                                           
+global cache service process 9                                                  
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               LMSa                                                           
+global cache service process 10                                                 
+                                                                                
+00               LMSb                                                           
+global cache service process 11                                                 
+                                                                                
+00               LMSc                                                           
+global cache service process 12                                                 
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               LMSd                                                           
+global cache service process 13                                                 
+                                                                                
+00               LMSe                                                           
+global cache service process 14                                                 
+                                                                                
+00               LMSf                                                           
+global cache service process 15                                                 
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               LMSg                                                           
+global cache service process 16                                                 
+                                                                                
+00               LMSh                                                           
+global cache service process 17                                                 
+                                                                                
+00               LMSi                                                           
+global cache service process 18                                                 
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               LMSj                                                           
+global cache service process 19                                                 
+                                                                                
+00               LMSk                                                           
+global cache service process 20                                                 
+                                                                                
+00               LMSl                                                           
+global cache service process 21                                                 
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               LMSm                                                           
+global cache service process 22                                                 
+                                                                                
+00               LMSn                                                           
+global cache service process 23                                                 
+                                                                                
+00               LMSo                                                           
+global cache service process 24                                                 
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               LMSp                                                           
+global cache service process 25                                                 
+                                                                                
+00               LMSq                                                           
+global cache service process 26                                                 
+                                                                                
+00               LMSr                                                           
+global cache service process 27                                                 
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               LMSs                                                           
+global cache service process 28                                                 
+                                                                                
+00               LMSt                                                           
+global cache service process 29                                                 
+                                                                                
+00               LMSu                                                           
+global cache service process 30                                                 
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               LMSv                                                           
+global cache service process 31                                                 
+                                                                                
+00               LMSw                                                           
+global cache service process 32                                                 
+                                                                                
+00               LMSx                                                           
+global cache service process 33                                                 
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               LMSy                                                           
+global cache service process 34                                                 
+                                                                                
+00               RMS0                                                           
+rac management server                                                           
+                                                                                
+00               LMHB                                                           
+lm heartbeat monitor                                                            
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               DBW1                                                           
+db writer process 1                                                             
+                                                                                
+00               DBW2                                                           
+db writer process 2                                                             
+                                                                                
+00               DBW3                                                           
+db writer process 3                                                             
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               DBW4                                                           
+db writer process 4                                                             
+                                                                                
+00               DBW5                                                           
+db writer process 5                                                             
+                                                                                
+00               DBW6                                                           
+db writer process 6                                                             
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               DBW7                                                           
+db writer process 7                                                             
+                                                                                
+00               DBW8                                                           
+db writer process 8                                                             
+                                                                                
+00               DBW9                                                           
+db writer process 9                                                             
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               DBWa                                                           
+db writer process 10 (a)                                                        
+                                                                                
+00               DBWb                                                           
+db writer process 11 (b)                                                        
+                                                                                
+00               DBWc                                                           
+db writer process 12 (c)                                                        
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               DBWd                                                           
+db writer process 13 (d)                                                        
+                                                                                
+00               DBWe                                                           
+db writer process 14 (e)                                                        
+                                                                                
+00               DBWf                                                           
+db writer process 15 (f)                                                        
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               DBWg                                                           
+db writer process 16 (g)                                                        
+                                                                                
+00               DBWh                                                           
+db writer process 17 (h)                                                        
+                                                                                
+00               DBWi                                                           
+db writer process 18 (i)                                                        
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               DBWj                                                           
+db writer process 19 (j)                                                        
+                                                                                
+00               DBWk                                                           
+db writer process 20 (k)                                                        
+                                                                                
+00               DBWl                                                           
+db writer process 21 (l)                                                        
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               DBWm                                                           
+db writer process 22 (m)                                                        
+                                                                                
+00               DBWn                                                           
+db writer process 23 (n)                                                        
+                                                                                
+00               DBWo                                                           
+db writer process 24 (o)                                                        
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               DBWp                                                           
+db writer process 25 (p)                                                        
+                                                                                
+00               DBWq                                                           
+db writer process 26 (q)                                                        
+                                                                                
+00               DBWr                                                           
+db writer process 27 (r)                                                        
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               DBWs                                                           
+db writer process 28 (s)                                                        
+                                                                                
+00               DBWt                                                           
+db writer process 29 (t)                                                        
+                                                                                
+00               DBWu                                                           
+db writer process 30 (u)                                                        
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               DBWv                                                           
+db writer process 31 (v)                                                        
+                                                                                
+00               DBWw                                                           
+db writer process 32 (s)                                                        
+                                                                                
+00               DBWx                                                           
+db writer process 33 (t)                                                        
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               DBWy                                                           
+db writer process 34 (u)                                                        
+                                                                                
+00               DBWz                                                           
+db writer process 35 (v)                                                        
+                                                                                
+00               MRP0                                                           
+Managed Standby Recovery                                                        
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               ARC0                                                           
+Archival Process 0                                                              
+                                                                                
+00               ARC1                                                           
+Archival Process 1                                                              
+                                                                                
+00               ARC2                                                           
+Archival Process 2                                                              
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               ARC3                                                           
+Archival Process 3                                                              
+                                                                                
+00               ARC4                                                           
+Archival Process 4                                                              
+                                                                                
+00               ARC5                                                           
+Archival Process 5                                                              
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               ARC6                                                           
+Archival Process 6                                                              
+                                                                                
+00               ARC7                                                           
+Archival Process 7                                                              
+                                                                                
+00               ARC8                                                           
+Archival Process 8                                                              
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               ARC9                                                           
+Archival Process 9                                                              
+                                                                                
+00               ARCa                                                           
+Archival Process 10                                                             
+                                                                                
+00               ARCb                                                           
+Archival Process 11                                                             
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               ARCc                                                           
+Archival Process 12                                                             
+                                                                                
+00               ARCd                                                           
+Archival Process 13                                                             
+                                                                                
+00               ARCe                                                           
+Archival Process 14                                                             
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               ARCf                                                           
+Archival Process 15                                                             
+                                                                                
+00               ARCg                                                           
+Archival Process 16                                                             
+                                                                                
+00               ARCh                                                           
+Archival Process 17                                                             
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               ARCi                                                           
+Archival Process 18                                                             
+                                                                                
+00               ARCj                                                           
+Archival Process 19                                                             
+                                                                                
+00               ARCk                                                           
+Archival Process 20                                                             
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               ARCl                                                           
+Archival Process 21                                                             
+                                                                                
+00               ARCm                                                           
+Archival Process 22                                                             
+                                                                                
+00               ARCn                                                           
+Archival Process 23                                                             
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               ARCo                                                           
+Archival Process 24                                                             
+                                                                                
+00               ARCp                                                           
+Archival Process 25                                                             
+                                                                                
+00               ARCq                                                           
+Archival Process 26                                                             
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               ARCr                                                           
+Archival Process 27                                                             
+                                                                                
+00               ARCs                                                           
+Archival Process 28                                                             
+                                                                                
+00               ARCt                                                           
+Archival Process 29                                                             
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               NSA1                                                           
+Redo transport NSA1                                                             
+                                                                                
+00               NSS1                                                           
+Redo transport NSS1                                                             
+                                                                                
+00               NSA2                                                           
+Redo transport NSA2                                                             
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               NSS2                                                           
+Redo transport NSS2                                                             
+                                                                                
+00               NSA3                                                           
+Redo transport NSA3                                                             
+                                                                                
+00               NSS3                                                           
+Redo transport NSS3                                                             
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               NSA4                                                           
+Redo transport NSA4                                                             
+                                                                                
+00               NSS4                                                           
+Redo transport NSS4                                                             
+                                                                                
+00               NSA5                                                           
+Redo transport NSA5                                                             
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               NSS5                                                           
+Redo transport NSS5                                                             
+                                                                                
+00               NSA6                                                           
+Redo transport NSA6                                                             
+                                                                                
+00               NSS6                                                           
+Redo transport NSS6                                                             
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               NSA7                                                           
+Redo transport NSA7                                                             
+                                                                                
+00               NSS7                                                           
+Redo transport NSS7                                                             
+                                                                                
+00               NSA8                                                           
+Redo transport NSA8                                                             
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               NSS8                                                           
+Redo transport NSS8                                                             
+                                                                                
+00               NSA9                                                           
+Redo transport NSA9                                                             
+                                                                                
+00               NSS9                                                           
+Redo transport NSS9                                                             
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               NSAA                                                           
+Redo transport NSAA                                                             
+                                                                                
+00               NSSA                                                           
+Redo transport NSSA                                                             
+                                                                                
+00               NSAB                                                           
+Redo transport NSAB                                                             
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               NSSB                                                           
+Redo transport NSSB                                                             
+                                                                                
+00               NSAC                                                           
+Redo transport NSAC                                                             
+                                                                                
+00               NSSC                                                           
+Redo transport NSSC                                                             
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               NSAD                                                           
+Redo transport NSAD                                                             
+                                                                                
+00               NSSD                                                           
+Redo transport NSSD                                                             
+                                                                                
+00               NSAE                                                           
+Redo transport NSAE                                                             
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               NSSE                                                           
+Redo transport NSSE                                                             
+                                                                                
+00               NSAF                                                           
+Redo transport NSAF                                                             
+                                                                                
+00               NSSF                                                           
+Redo transport NSSF                                                             
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               NSAG                                                           
+Redo transport NSAG                                                             
+                                                                                
+00               NSSG                                                           
+Redo transport NSSG                                                             
+                                                                                
+00               NSAH                                                           
+Redo transport NSAH                                                             
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               NSSH                                                           
+Redo transport NSSH                                                             
+                                                                                
+00               NSAI                                                           
+Redo transport NSAI                                                             
+                                                                                
+00               NSSI                                                           
+Redo transport NSSI                                                             
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               NSAJ                                                           
+Redo transport NSAJ                                                             
+                                                                                
+00               NSSJ                                                           
+Redo transport NSSJ                                                             
+                                                                                
+00               NSAK                                                           
+Redo transport NSAK                                                             
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               NSSK                                                           
+Redo transport NSSK                                                             
+                                                                                
+00               NSAL                                                           
+Redo transport NSAL                                                             
+                                                                                
+00               NSSL                                                           
+Redo transport NSSL                                                             
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               NSAM                                                           
+Redo transport NSAM                                                             
+                                                                                
+00               NSSM                                                           
+Redo transport NSSM                                                             
+                                                                                
+00               NSAN                                                           
+Redo transport NSAN                                                             
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               NSSN                                                           
+Redo transport NSSN                                                             
+                                                                                
+00               NSAO                                                           
+Redo transport NSAO                                                             
+                                                                                
+00               NSSO                                                           
+Redo transport NSSO                                                             
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               NSAP                                                           
+Redo transport NSAP                                                             
+                                                                                
+00               NSSP                                                           
+Redo transport NSSP                                                             
+                                                                                
+00               NSAQ                                                           
+Redo transport NSAQ                                                             
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               NSSQ                                                           
+Redo transport NSSQ                                                             
+                                                                                
+00               NSAR                                                           
+Redo transport NSAR                                                             
+                                                                                
+00               NSSR                                                           
+Redo transport NSSR                                                             
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               NSAS                                                           
+Redo transport NSAS                                                             
+                                                                                
+00               NSSS                                                           
+Redo transport NSSS                                                             
+                                                                                
+00               NSAT                                                           
+Redo transport NSAT                                                             
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               NSST                                                           
+Redo transport NSST                                                             
+                                                                                
+00               NSAU                                                           
+Redo transport NSAU                                                             
+                                                                                
+00               NSSU                                                           
+Redo transport NSSU                                                             
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               NSAV                                                           
+Redo transport NSAV                                                             
+                                                                                
+00               NSSV                                                           
+Redo transport NSSV                                                             
+                                                                                
+00               LCK0                                                           
+Lock Process 0                                                                  
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               ABMR                                                           
+Auto BMR Background Process                                                     
+                                                                                
+00               LSP1                                                           
+Dictionary build process for Logical Standby                                    
+                                                                                
+00               LSP0                                                           
+Logical Standby                                                                 
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               LSP2                                                           
+Set Guard Standby Information for Logical Standby                               
+                                                                                
+00               CTWR                                                           
+Change Tracking Writer                                                          
+                                                                                
+00               RVWR                                                           
+Recovery Writer                                                                 
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               FBDA                                                           
+Flashback Data Archiver Process                                                 
+                                                                                
+00               GTX0                                                           
+Global Txn process 0                                                            
+                                                                                
+00               GTX1                                                           
+Global Txn process 1                                                            
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               GTX2                                                           
+Global Txn process 2                                                            
+                                                                                
+00               GTX3                                                           
+Global Txn process 3                                                            
+                                                                                
+00               GTX4                                                           
+Global Txn process 4                                                            
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               GTX5                                                           
+Global Txn process 5                                                            
+                                                                                
+00               GTX6                                                           
+Global Txn process 6                                                            
+                                                                                
+00               GTX7                                                           
+Global Txn process 7                                                            
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               GTX8                                                           
+Global Txn process 8                                                            
+                                                                                
+00               GTX9                                                           
+Global Txn process 9                                                            
+                                                                                
+00               GTXa                                                           
+Global Txn process 10                                                           
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               GTXb                                                           
+Global Txn process 11                                                           
+                                                                                
+00               GTXc                                                           
+Global Txn process 12                                                           
+                                                                                
+00               GTXd                                                           
+Global Txn process 13                                                           
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               GTXe                                                           
+Global Txn process 14                                                           
+                                                                                
+00               GTXf                                                           
+Global Txn process 15                                                           
+                                                                                
+00               GTXg                                                           
+Global Txn process 16                                                           
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               GTXh                                                           
+Global Txn process 17                                                           
+                                                                                
+00               GTXi                                                           
+Global Txn process 18                                                           
+                                                                                
+00               GTXj                                                           
+Global Txn process 19                                                           
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               RCBG                                                           
+Result Cache: Background                                                        
+                                                                                
+00               EMNC                                                           
+EMON Coordinator                                                                
+                                                                                
+00               DMON                                                           
+DG Broker Monitor Process                                                       
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               RSM0                                                           
+Data Guard Broker Resource Guard Process 0                                      
+                                                                                
+00               NSV0                                                           
+Data Guard Broker NetSlave Process 0                                            
+                                                                                
+00               NSV1                                                           
+Data Guard Broker NetSlave Process 1                                            
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               NSV2                                                           
+Data Guard Broker NetSlave Process 2                                            
+                                                                                
+00               NSV3                                                           
+Data Guard Broker NetSlave Process 3                                            
+                                                                                
+00               NSV4                                                           
+Data Guard Broker NetSlave Process 4                                            
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               NSV5                                                           
+Data Guard Broker NetSlave Process 5                                            
+                                                                                
+00               NSV6                                                           
+Data Guard Broker NetSlave Process 6                                            
+                                                                                
+00               NSV7                                                           
+Data Guard Broker NetSlave Process 7                                            
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               NSV8                                                           
+Data Guard Broker NetSlave Process 8                                            
+                                                                                
+00               NSV9                                                           
+Data Guard Broker NetSlave Process 9                                            
+                                                                                
+00               NSVA                                                           
+Data Guard Broker NetSlave Process A                                            
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               NSVB                                                           
+Data Guard Broker NetSlave Process B                                            
+                                                                                
+00               NSVC                                                           
+Data Guard Broker NetSlave Process C                                            
+                                                                                
+00               NSVD                                                           
+Data Guard Broker NetSlave Process D                                            
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               NSVE                                                           
+Data Guard Broker NetSlave Process E                                            
+                                                                                
+00               NSVF                                                           
+Data Guard Broker NetSlave Process F                                            
+                                                                                
+00               NSVG                                                           
+Data Guard Broker NetSlave Process G                                            
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               NSVH                                                           
+Data Guard Broker NetSlave Process H                                            
+                                                                                
+00               NSVI                                                           
+Data Guard Broker NetSlave Process I                                            
+                                                                                
+00               NSVJ                                                           
+Data Guard Broker NetSlave Process J                                            
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               NSVK                                                           
+Data Guard Broker NetSlave Process K                                            
+                                                                                
+00               NSVL                                                           
+Data Guard Broker NetSlave Process L                                            
+                                                                                
+00               NSVM                                                           
+Data Guard Broker NetSlave Process M                                            
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               NSVN                                                           
+Data Guard Broker NetSlave Process N                                            
+                                                                                
+00               NSVO                                                           
+Data Guard Broker NetSlave Process O                                            
+                                                                                
+00               NSVP                                                           
+Data Guard Broker NetSlave Process P                                            
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               NSVQ                                                           
+Data Guard Broker NetSlave Process Q                                            
+                                                                                
+00               NSVR                                                           
+Data Guard Broker NetSlave Process R                                            
+                                                                                
+00               NSVS                                                           
+Data Guard Broker NetSlave Process S                                            
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               NSVT                                                           
+Data Guard Broker NetSlave Process T                                            
+                                                                                
+00               NSVU                                                           
+Data Guard Broker NetSlave Process U                                            
+                                                                                
+00               INSV                                                           
+Data Guard Broker INstance SlaVe Process                                        
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               FSFP                                                           
+Data Guard Broker FSFO Pinger                                                   
+                                                                                
+00               RBAL                                                           
+ASM Rebalance master                                                            
+                                                                                
+00               ARB0                                                           
+ASM Rebalance 0                                                                 
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               ARB1                                                           
+ASM Rebalance 1                                                                 
+                                                                                
+00               ARB2                                                           
+ASM Rebalance 2                                                                 
+                                                                                
+00               ARB3                                                           
+ASM Rebalance 3                                                                 
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               ARB4                                                           
+ASM Rebalance 4                                                                 
+                                                                                
+00               ARB5                                                           
+ASM Rebalance 5                                                                 
+                                                                                
+00               ARB6                                                           
+ASM Rebalance 6                                                                 
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               ARB7                                                           
+ASM Rebalance 7                                                                 
+                                                                                
+00               ARB8                                                           
+ASM Rebalance 8                                                                 
+                                                                                
+00               ARB9                                                           
+ASM Rebalance 9                                                                 
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               ARBA                                                           
+ASM Rebalance 10                                                                
+                                                                                
+00               ASMB                                                           
+ASM Background                                                                  
+                                                                                
+00               MARK                                                           
+mark AU for resync koordinator                                                  
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               GMON                                                           
+diskgroup monitor                                                               
+                                                                                
+00               VBG0                                                           
+Volume BG 0                                                                     
+                                                                                
+00               VBG1                                                           
+Volume BG 1                                                                     
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               VBG2                                                           
+Volume BG 2                                                                     
+                                                                                
+00               VBG3                                                           
+Volume BG 3                                                                     
+                                                                                
+00               VBG4                                                           
+Volume BG 4                                                                     
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               VBG5                                                           
+Volume BG 5                                                                     
+                                                                                
+00               VBG6                                                           
+Volume BG 6                                                                     
+                                                                                
+00               VBG7                                                           
+Volume BG 7                                                                     
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               VBG8                                                           
+Volume BG 8                                                                     
+                                                                                
+00               VBG9                                                           
+Volume BG 9                                                                     
+                                                                                
+00               VDBG                                                           
+Volume Driver BG                                                                
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               VMB0                                                           
+Volume Membership 0                                                             
+                                                                                
+00               ACFS                                                           
+ACFS CSS                                                                        
+                                                                                
+00               XDMG                                                           
+cell automation manager                                                         
+                                                                                
+
+PADDR            NAME                                                           
+---------------- -----                                                          
+DESCRIPTION                                                                     
+----------------------------------------------------------------                
+00               XDWK                                                           
+cell automation worker actions                                                  
+                                                                                
+
+295 rows selected.
+
+
+NAME                                                                            
+--------------------------------------------------------------------------------
+/data2/oracle/app/oradata/orcl/system01.dbf                                     
+/data2/oracle/app/oradata/orcl/sysaux01.dbf                                     
+/data2/oracle/app/oradata/orcl/undotbs01.dbf                                    
+/data2/oracle/app/oradata/orcl/users01.dbf                                      
+/data2/oracle/app/oradata/orcl/example01.dbf                                    
+
+
+MEMBER                                                                          
+--------------------------------------------------------------------------------
+/data2/oracle/app/oradata/orcl/redo03.log                                       
+/data2/oracle/app/oradata/orcl/redo02.log                                       
+/data2/oracle/app/oradata/orcl/redo01.log                                       
+
+
+NAME                                                                            
+--------------------------------------------------------------------------------
+/data2/oracle/app/oradata/orcl/control01.ctl                                    
+/data2/oracle/app/flash_recovery_area/orcl/control02.ctl                        
+
+
+no rows selected
+
+SELECT SID,seria#,username from v$session
+           *
+ERROR at line 1:
+ORA-00904: "SERIA#": invalid identifier 
+
+
